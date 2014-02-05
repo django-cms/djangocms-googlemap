@@ -1,0 +1,10 @@
+
+[main]
+host = https://www.transifex.com
+
+[django-cms.djangocms-googlemap]
+file_filter = djangocms_googlemap/locale/<lang>/LC_MESSAGES/django.po
+source_file = djangocms_googlemap/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type = PO
+

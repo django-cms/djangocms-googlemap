@@ -1,0 +1,5 @@
+include LICENSE.txt
+include README.md
+recursive-include djangocms_googlemap/locale *
+recursive-include djangocms_googlemap/templates *
+recursive-exclude * *.py[co]
