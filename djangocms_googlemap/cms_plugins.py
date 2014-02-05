@@ -3,8 +3,8 @@ from django.utils.translation import ugettext_lazy as _
 from cms.plugin_base import CMSPluginBase
 from cms.plugin_pool import plugin_pool
 
-from forms import GoogleMapForm
-from models import GoogleMap
+from .forms import GoogleMapForm
+from .models import GoogleMap
 
 
 class GoogleMapPlugin(CMSPluginBase):
