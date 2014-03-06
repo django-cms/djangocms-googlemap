@@ -19,47 +19,61 @@ class Migration(SchemaMigration):
             # Check for missing fields from previous migrations
             # (0013_auto__add_field_googlemap_info_window__add_field_googlemap_scrollwheel.py)
 
-            # South will not raise an Exception if the column already exists
+            # Get existing columns
+            columns = []
+            seen_models = connection.introspection.installed_models(table_names)
+            for model in seen_models:
+                if model._meta.db_table == 'djangocms_googlemap_googlemap':
+                    columns = [field.column for field in model._meta.fields]
 
-            # Adding field 'GoogleMap.info_window'
-            db.add_column(u'djangocms_googlemap_googlemap', 'info_window',
-                          self.gf('django.db.models.fields.BooleanField')(default=True),
-                          keep_default=False)
+            # Add missing columns
+            if not 'info_window' in columns:
+                # Adding field 'GoogleMap.info_window'
+                db.add_column(u'djangocms_googlemap_googlemap', 'info_window',
+                              self.gf('django.db.models.fields.BooleanField')(default=True),
+                              keep_default=False)
 
-            # Adding field 'GoogleMap.scrollwheel'
-            db.add_column(u'djangocms_googlemap_googlemap', 'scrollwheel',
-                          self.gf('django.db.models.fields.BooleanField')(default=True),
-                          keep_default=False)
+            if not 'scrollwheel' in columns:
+                # Adding field 'GoogleMap.scrollwheel'
+                db.add_column(u'djangocms_googlemap_googlemap', 'scrollwheel',
+                              self.gf('django.db.models.fields.BooleanField')(default=True),
+                              keep_default=False)
 
-            # Adding field 'GoogleMap.double_click_zoom'
-            db.add_column(u'djangocms_googlemap_googlemap', 'double_click_zoom',
-                          self.gf('django.db.models.fields.BooleanField')(default=True),
-                          keep_default=False)
+            if not 'double_click_zoom' in columns:
+                # Adding field 'GoogleMap.double_click_zoom'
+                db.add_column(u'djangocms_googlemap_googlemap', 'double_click_zoom',
+                              self.gf('django.db.models.fields.BooleanField')(default=True),
+                              keep_default=False)
 
-            # Adding field 'GoogleMap.draggable'
-            db.add_column(u'djangocms_googlemap_googlemap', 'draggable',
-                          self.gf('django.db.models.fields.BooleanField')(default=True),
-                          keep_default=False)
+            if not 'draggable' in columns:
+                # Adding field 'GoogleMap.draggable'
+                db.add_column(u'djangocms_googlemap_googlemap', 'draggable',
+                              self.gf('django.db.models.fields.BooleanField')(default=True),
+                              keep_default=False)
 
-            # Adding field 'GoogleMap.keyboard_shortcuts'
-            db.add_column(u'djangocms_googlemap_googlemap', 'keyboard_shortcuts',
-                          self.gf('django.db.models.fields.BooleanField')(default=True),
-                          keep_default=False)
+            if not 'keyboard_shortcuts' in columns:
+                # Adding field 'GoogleMap.keyboard_shortcuts'
+                db.add_column(u'djangocms_googlemap_googlemap', 'keyboard_shortcuts',
+                              self.gf('django.db.models.fields.BooleanField')(default=True),
+                              keep_default=False)
 
-            # Adding field 'GoogleMap.pan_control'
-            db.add_column(u'djangocms_googlemap_googlemap', 'pan_control',
-                          self.gf('django.db.models.fields.BooleanField')(default=True),
-                          keep_default=False)
+            if not 'pan_control' in columns:
+                # Adding field 'GoogleMap.pan_control'
+                db.add_column(u'djangocms_googlemap_googlemap', 'pan_control',
+                              self.gf('django.db.models.fields.BooleanField')(default=True),
+                              keep_default=False)
 
-            # Adding field 'GoogleMap.zoom_control'
-            db.add_column(u'djangocms_googlemap_googlemap', 'zoom_control',
-                          self.gf('django.db.models.fields.BooleanField')(default=True),
-                          keep_default=False)
+            if not 'zoom_control' in columns:
+                # Adding field 'GoogleMap.zoom_control'
+                db.add_column(u'djangocms_googlemap_googlemap', 'zoom_control',
+                              self.gf('django.db.models.fields.BooleanField')(default=True),
+                              keep_default=False)
 
-            # Adding field 'GoogleMap.street_view_control'
-            db.add_column(u'djangocms_googlemap_googlemap', 'street_view_control',
-                          self.gf('django.db.models.fields.BooleanField')(default=True),
-                          keep_default=False)
+            if not 'street_view_control' in columns:
+                # Adding field 'GoogleMap.street_view_control'
+                db.add_column(u'djangocms_googlemap_googlemap', 'street_view_control',
+                              self.gf('django.db.models.fields.BooleanField')(default=True),
+                              keep_default=False)
 
         else:
             # Adding model 'GoogleMap'
