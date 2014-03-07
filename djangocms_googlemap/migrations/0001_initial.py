@@ -20,11 +20,8 @@ class Migration(SchemaMigration):
             # (0013_auto__add_field_googlemap_info_window__add_field_googlemap_scrollwheel.py)
 
             # Get existing columns
-            columns = []
-            seen_models = connection.introspection.installed_models(table_names)
-            for model in seen_models:
-                if model._meta.db_table == 'djangocms_googlemap_googlemap':
-                    columns = [field.column for field in model._meta.fields]
+            description = connection.introspection.get_table_description(connection.cursor(), 'djangocms_googlemap_googlemap')
+            columns = [c[0] for c in description]
 
             # Add missing columns
             if not 'info_window' in columns:
