@@ -19,7 +19,7 @@ function initializeMap{{ object.pk}}() {
         keyboardShortcuts: {{ object.keyboard_shortcuts|lower}},
         panControl: {{ object.pan_control|lower}},
         zoomControl: {{ object.zoom_control|lower}},
-        streetViewControl: {{ object.street_view_control|lower}},
+        streetViewControl: {{ object.street_view_control|lower}}
       };
 
       {% if object.get_lat_lng %}
