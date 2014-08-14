@@ -1,0 +1,155 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Tibor Balogh, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: django-cms\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-02-06 14:10+0100\n"
+"PO-Revision-Date: 2014-03-06 20:10+0000\n"
+"Last-Translator: Tibor Balogh\n"
+"Language-Team: Hungarian (http://www.transifex.com/projects/p/django-cms/language/hu/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: hu\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: cms_plugins.py:12
+msgid "Google Map"
+msgstr "Google Térkép"
+
+#: cms_plugins.py:21
+msgid "Advanced"
+msgstr "Haladó"
+
+#: forms.py:25
+msgid "Must be a positive integer followed by “px” or “%”."
+msgstr "Az elvárt érték pozitív egész szám, ami után \"px\" vagy \"%\" jel következik."
+
+#: forms.py:28
+msgid "Must be a positive integer followed by “px”."
+msgstr "Az elvárt érték pozitív egész szám, amit \"px\" követ."
+
+#: models.py:13
+msgid "map title"
+msgstr "térkép címe"
+
+#: models.py:16
+msgid "address"
+msgstr "cím"
+
+#: models.py:17
+msgid "zip code"
+msgstr "irányító szám"
+
+#: models.py:18
+msgid "city"
+msgstr "város"
+
+#: models.py:21
+msgid "additional content"
+msgstr "kiegészítő tartalom"
+
+#: models.py:22
+msgid "Displayed under address in the bubble."
+msgstr "A cím alatt jelenik meg a buborékban."
+
+#: models.py:26
+msgid "zoom level"
+msgstr "nagyítás szintje"
+
+#: models.py:29
+msgid "latitude"
+msgstr "szélesség"
+
+#: models.py:30
+msgid "Use latitude & longitude to fine tune the map position."
+msgstr "Használja a szélességi és hosszúsági fokot a térkép pozíció pontos beállításához."
+
+#: models.py:33
+msgid "longitude"
+msgstr "hosszúság"
+
+#: models.py:36
+msgid "route planer title"
+msgstr "Útvonaltervező címe"
+
+#: models.py:37
+msgid "Calculate your fastest way to here"
+msgstr "Az ide vezető leggyorsabb útvonal tervezése"
+
+#: models.py:39
+msgid "route planer"
+msgstr "útvonal tervező"
+
+#: models.py:42
+msgid "width"
+msgstr "szélesség"
+
+#: models.py:43
+msgid "Plugin width (in pixels or percent)."
+msgstr "Plugin szélesség (pixelben)"
+
+#: models.py:46
+msgid "height"
+msgstr "magasság"
+
+#: models.py:47
+msgid "Plugin height (in pixels)."
+msgstr "Plugin magasság (pixelben)"
+
+#: models.py:50
+msgid "info window"
+msgstr "info ablak"
+
+#: models.py:51
+msgid "Show textbox over marker"
+msgstr "szövegdoboz mutatása a jelölő fölött"
+
+#: models.py:54
+msgid "scrollwheel"
+msgstr "görgető"
+
+#: models.py:55
+msgid "Enable scrollwheel zooming on the map"
+msgstr "Görgetővel történő nagyítás bekapcsolása a térképen"
+
+#: models.py:58
+msgid "double click zoom"
+msgstr "nagyítás duplaklikkre"
+
+#: models.py:60
+msgid "draggable"
+msgstr "húzható"
+
+#: models.py:63
+msgid "keyboard shortcuts"
+msgstr "billentyűparancsok"
+
+#: models.py:65
+msgid "Pan control"
+msgstr "Mozgató vezérlő"
+
+#: models.py:67
+msgid "zoom control"
+msgstr "Nagyítás vezérlő"
+
+#: models.py:70
+msgid "Street View control"
+msgstr "Street View vezérlő"
+
+#: models.py:78
+msgid "Map"
+msgstr "Térkép"
+
+#: templates/cms/plugins/googlemap.html:83
+msgid "Your address: "
+msgstr "Az Ön címe:"
+
+#: templates/cms/plugins/googlemap.html:85
+msgid "Calculate route"
+msgstr "Útvonal tervezése"

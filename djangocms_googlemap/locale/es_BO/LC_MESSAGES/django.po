@@ -1,0 +1,154 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+msgid ""
+msgstr ""
+"Project-Id-Version: django-cms\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-02-06 14:10+0100\n"
+"PO-Revision-Date: 2014-02-06 13:31+0000\n"
+"Last-Translator: Chive <kim@smuzey.ch>\n"
+"Language-Team: Spanish (Bolivia) (http://www.transifex.com/projects/p/django-cms/language/es_BO/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es_BO\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: cms_plugins.py:12
+msgid "Google Map"
+msgstr "Mapa de Google"
+
+#: cms_plugins.py:21
+msgid "Advanced"
+msgstr ""
+
+#: forms.py:25
+msgid "Must be a positive integer followed by “px” or “%”."
+msgstr ""
+
+#: forms.py:28
+msgid "Must be a positive integer followed by “px”."
+msgstr ""
+
+#: models.py:13
+msgid "map title"
+msgstr "título del mapa"
+
+#: models.py:16
+msgid "address"
+msgstr "dirección"
+
+#: models.py:17
+msgid "zip code"
+msgstr "código postal"
+
+#: models.py:18
+msgid "city"
+msgstr "ciudad"
+
+#: models.py:21
+msgid "additional content"
+msgstr "Contenido adicional"
+
+#: models.py:22
+msgid "Displayed under address in the bubble."
+msgstr ""
+
+#: models.py:26
+msgid "zoom level"
+msgstr "nivel de zoom"
+
+#: models.py:29
+msgid "latitude"
+msgstr "latitud"
+
+#: models.py:30
+msgid "Use latitude & longitude to fine tune the map position."
+msgstr "Use latitud y longitud para afinar la posición del mapa."
+
+#: models.py:33
+msgid "longitude"
+msgstr "longitud"
+
+#: models.py:36
+msgid "route planer title"
+msgstr "título del planificador de ruta"
+
+#: models.py:37
+msgid "Calculate your fastest way to here"
+msgstr "Calcular la manera más rápida de ir"
+
+#: models.py:39
+msgid "route planer"
+msgstr "Planificador de ruta"
+
+#: models.py:42
+msgid "width"
+msgstr "ancho"
+
+#: models.py:43
+msgid "Plugin width (in pixels or percent)."
+msgstr ""
+
+#: models.py:46
+msgid "height"
+msgstr "alto"
+
+#: models.py:47
+msgid "Plugin height (in pixels)."
+msgstr ""
+
+#: models.py:50
+msgid "info window"
+msgstr ""
+
+#: models.py:51
+msgid "Show textbox over marker"
+msgstr ""
+
+#: models.py:54
+msgid "scrollwheel"
+msgstr ""
+
+#: models.py:55
+msgid "Enable scrollwheel zooming on the map"
+msgstr ""
+
+#: models.py:58
+msgid "double click zoom"
+msgstr ""
+
+#: models.py:60
+msgid "draggable"
+msgstr ""
+
+#: models.py:63
+msgid "keyboard shortcuts"
+msgstr ""
+
+#: models.py:65
+msgid "Pan control"
+msgstr ""
+
+#: models.py:67
+msgid "zoom control"
+msgstr ""
+
+#: models.py:70
+msgid "Street View control"
+msgstr ""
+
+#: models.py:78
+msgid "Map"
+msgstr "Mapa"
+
+#: templates/cms/plugins/googlemap.html:83
+msgid "Your address: "
+msgstr "Su dirección:"
+
+#: templates/cms/plugins/googlemap.html:85
+msgid "Calculate route"
+msgstr "Calcular la ruta"

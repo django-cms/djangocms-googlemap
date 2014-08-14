@@ -1,0 +1,155 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Bashar Al-Abdulhadi, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: django-cms\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-02-06 14:10+0100\n"
+"PO-Revision-Date: 2014-03-03 18:30+0000\n"
+"Last-Translator: Bashar Al-Abdulhadi\n"
+"Language-Team: Arabic (http://www.transifex.com/projects/p/django-cms/language/ar/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ar\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#: cms_plugins.py:12
+msgid "Google Map"
+msgstr "خرائط جوجل"
+
+#: cms_plugins.py:21
+msgid "Advanced"
+msgstr "خيارات متقدمة"
+
+#: forms.py:25
+msgid "Must be a positive integer followed by “px” or “%”."
+msgstr "يجب أن يكون رقم صحيح متبوع بوحدات \"px\" أو \"%\"."
+
+#: forms.py:28
+msgid "Must be a positive integer followed by “px”."
+msgstr "يجب أن يكون رقم صحيح متبوع بوحدة \"px\"."
+
+#: models.py:13
+msgid "map title"
+msgstr "عنوان الخريطة"
+
+#: models.py:16
+msgid "address"
+msgstr "العنوان"
+
+#: models.py:17
+msgid "zip code"
+msgstr "zip code"
+
+#: models.py:18
+msgid "city"
+msgstr "المدينة"
+
+#: models.py:21
+msgid "additional content"
+msgstr "محتويات إضافية"
+
+#: models.py:22
+msgid "Displayed under address in the bubble."
+msgstr "يتم العرض تحت العنوان البريدي فى الفقاعة."
+
+#: models.py:26
+msgid "zoom level"
+msgstr "درجة التقريب"
+
+#: models.py:29
+msgid "latitude"
+msgstr "خط العرض"
+
+#: models.py:30
+msgid "Use latitude & longitude to fine tune the map position."
+msgstr "استخدم خطوط الطول والعرض لتحديد الموضع على الخريطة بدقة."
+
+#: models.py:33
+msgid "longitude"
+msgstr "خطوط الطول"
+
+#: models.py:36
+msgid "route planer title"
+msgstr "عنوان مخطط الطريق"
+
+#: models.py:37
+msgid "Calculate your fastest way to here"
+msgstr "احسب أسرع طريق إلى هنا"
+
+#: models.py:39
+msgid "route planer"
+msgstr "مخطط الطريق"
+
+#: models.py:42
+msgid "width"
+msgstr "العرض"
+
+#: models.py:43
+msgid "Plugin width (in pixels or percent)."
+msgstr "عرض البرنامج المساعد (الوحدات بيكسل أو نسبة مئوية)"
+
+#: models.py:46
+msgid "height"
+msgstr "الطول"
+
+#: models.py:47
+msgid "Plugin height (in pixels)."
+msgstr "طول البرنامج المساعد (الوحدة بيكسل)"
+
+#: models.py:50
+msgid "info window"
+msgstr "نافذة المعلومات"
+
+#: models.py:51
+msgid "Show textbox over marker"
+msgstr "عرض النص على علامة"
+
+#: models.py:54
+msgid "scrollwheel"
+msgstr "عجلة التصفح"
+
+#: models.py:55
+msgid "Enable scrollwheel zooming on the map"
+msgstr "تفعيل عملية التكبير بعجلة التصفح بالفأرة على الخريطة"
+
+#: models.py:58
+msgid "double click zoom"
+msgstr "التكبير بالضغط المزدوج"
+
+#: models.py:60
+msgid "draggable"
+msgstr "قابل للسحب"
+
+#: models.py:63
+msgid "keyboard shortcuts"
+msgstr "اختصارات لوحة المفاتيح"
+
+#: models.py:65
+msgid "Pan control"
+msgstr "التحكم الكامل"
+
+#: models.py:67
+msgid "zoom control"
+msgstr "تحكم التكبير"
+
+#: models.py:70
+msgid "Street View control"
+msgstr "تحكم عرض الشارع"
+
+#: models.py:78
+msgid "Map"
+msgstr "الخريطة"
+
+#: templates/cms/plugins/googlemap.html:83
+msgid "Your address: "
+msgstr "العنوان البريدي:"
+
+#: templates/cms/plugins/googlemap.html:85
+msgid "Calculate route"
+msgstr "احسب الطريق"

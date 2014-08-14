@@ -1,0 +1,154 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+msgid ""
+msgstr ""
+"Project-Id-Version: django-cms\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-02-06 14:10+0100\n"
+"PO-Revision-Date: 2014-02-06 13:31+0000\n"
+"Last-Translator: Chive <kim@smuzey.ch>\n"
+"Language-Team: Norwegian (http://www.transifex.com/projects/p/django-cms/language/no/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: no\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: cms_plugins.py:12
+msgid "Google Map"
+msgstr "Google-kart"
+
+#: cms_plugins.py:21
+msgid "Advanced"
+msgstr "Avansert"
+
+#: forms.py:25
+msgid "Must be a positive integer followed by “px” or “%”."
+msgstr "Må være et positivt heltall etterfulgt av \"px” eller “%”."
+
+#: forms.py:28
+msgid "Must be a positive integer followed by “px”."
+msgstr "Må være et positivt heltall etterfulgt av “px”."
+
+#: models.py:13
+msgid "map title"
+msgstr "karttittel"
+
+#: models.py:16
+msgid "address"
+msgstr "adresse"
+
+#: models.py:17
+msgid "zip code"
+msgstr "postnummer"
+
+#: models.py:18
+msgid "city"
+msgstr "sted"
+
+#: models.py:21
+msgid "additional content"
+msgstr "tilleggsinnhold"
+
+#: models.py:22
+msgid "Displayed under address in the bubble."
+msgstr "Vises under adresse i boblen"
+
+#: models.py:26
+msgid "zoom level"
+msgstr "zoomnivå"
+
+#: models.py:29
+msgid "latitude"
+msgstr "breddegrad"
+
+#: models.py:30
+msgid "Use latitude & longitude to fine tune the map position."
+msgstr "Bruk breddegrad og lengdegrad for å fininstille kartposisjonen."
+
+#: models.py:33
+msgid "longitude"
+msgstr "lengdegrad"
+
+#: models.py:36
+msgid "route planer title"
+msgstr "ruteplanleggertittel"
+
+#: models.py:37
+msgid "Calculate your fastest way to here"
+msgstr "Kalkulér den raskeste veien hit"
+
+#: models.py:39
+msgid "route planer"
+msgstr "ruteplanlegger"
+
+#: models.py:42
+msgid "width"
+msgstr "bredde"
+
+#: models.py:43
+msgid "Plugin width (in pixels or percent)."
+msgstr "Bredde for utvidelse (i piksler eller prosent)."
+
+#: models.py:46
+msgid "height"
+msgstr "høyde"
+
+#: models.py:47
+msgid "Plugin height (in pixels)."
+msgstr "Høyde for utvidelse (i piksler)"
+
+#: models.py:50
+msgid "info window"
+msgstr ""
+
+#: models.py:51
+msgid "Show textbox over marker"
+msgstr ""
+
+#: models.py:54
+msgid "scrollwheel"
+msgstr ""
+
+#: models.py:55
+msgid "Enable scrollwheel zooming on the map"
+msgstr ""
+
+#: models.py:58
+msgid "double click zoom"
+msgstr ""
+
+#: models.py:60
+msgid "draggable"
+msgstr ""
+
+#: models.py:63
+msgid "keyboard shortcuts"
+msgstr ""
+
+#: models.py:65
+msgid "Pan control"
+msgstr ""
+
+#: models.py:67
+msgid "zoom control"
+msgstr ""
+
+#: models.py:70
+msgid "Street View control"
+msgstr ""
+
+#: models.py:78
+msgid "Map"
+msgstr "Kart"
+
+#: templates/cms/plugins/googlemap.html:83
+msgid "Your address: "
+msgstr "Din adresse:"
+
+#: templates/cms/plugins/googlemap.html:85
+msgid "Calculate route"
+msgstr "Kalkulér rute"

@@ -1,0 +1,156 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# ar4s <arkadiusz.adamski@gmail.com>, 2014
+# Robert Weglarek <weglarek.robert@gmail.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: django-cms\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-02-06 14:10+0100\n"
+"PO-Revision-Date: 2014-05-25 21:42+0000\n"
+"Last-Translator: ar4s <arkadiusz.adamski@gmail.com>\n"
+"Language-Team: Polish (http://www.transifex.com/projects/p/django-cms/language/pl/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: pl\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: cms_plugins.py:12
+msgid "Google Map"
+msgstr "Mapa Google"
+
+#: cms_plugins.py:21
+msgid "Advanced"
+msgstr "Zaawansowane"
+
+#: forms.py:25
+msgid "Must be a positive integer followed by “px” or “%”."
+msgstr "To musi być liczba całkowita dodatnia przedstawiona w “px” lub “%”."
+
+#: forms.py:28
+msgid "Must be a positive integer followed by “px”."
+msgstr "To musi być liczba całkowita dodatnia przedstawiona w “px”."
+
+#: models.py:13
+msgid "map title"
+msgstr "tytuł mapy"
+
+#: models.py:16
+msgid "address"
+msgstr "adres"
+
+#: models.py:17
+msgid "zip code"
+msgstr "kod pocztowy"
+
+#: models.py:18
+msgid "city"
+msgstr "Miejscowość"
+
+#: models.py:21
+msgid "additional content"
+msgstr "dodatkowa treść"
+
+#: models.py:22
+msgid "Displayed under address in the bubble."
+msgstr "Wyświetlone poniżej adresu w dymku."
+
+#: models.py:26
+msgid "zoom level"
+msgstr "Poziom powiększenia"
+
+#: models.py:29
+msgid "latitude"
+msgstr "szerokość geograficzna"
+
+#: models.py:30
+msgid "Use latitude & longitude to fine tune the map position."
+msgstr "Użyj szerokości i długości geograficznej w celu dostosowania współrzędnych na mapie."
+
+#: models.py:33
+msgid "longitude"
+msgstr "długość geograficzna"
+
+#: models.py:36
+msgid "route planer title"
+msgstr "tytuł planowanej trasy"
+
+#: models.py:37
+msgid "Calculate your fastest way to here"
+msgstr "Oblicz najszybszą trasę do tego miejsca"
+
+#: models.py:39
+msgid "route planer"
+msgstr "planowanie trasy"
+
+#: models.py:42
+msgid "width"
+msgstr "szerokość"
+
+#: models.py:43
+msgid "Plugin width (in pixels or percent)."
+msgstr "Szerokość wtyczki ( w pikselach lub procentach)."
+
+#: models.py:46
+msgid "height"
+msgstr "wysokość"
+
+#: models.py:47
+msgid "Plugin height (in pixels)."
+msgstr "Wysokość wtyczki (w pikselach)."
+
+#: models.py:50
+msgid "info window"
+msgstr "okno informacyjne"
+
+#: models.py:51
+msgid "Show textbox over marker"
+msgstr ""
+
+#: models.py:54
+msgid "scrollwheel"
+msgstr ""
+
+#: models.py:55
+msgid "Enable scrollwheel zooming on the map"
+msgstr ""
+
+#: models.py:58
+msgid "double click zoom"
+msgstr "powiększenie podwójnym kliknięciem"
+
+#: models.py:60
+msgid "draggable"
+msgstr ""
+
+#: models.py:63
+msgid "keyboard shortcuts"
+msgstr "skróty klawiszowe"
+
+#: models.py:65
+msgid "Pan control"
+msgstr ""
+
+#: models.py:67
+msgid "zoom control"
+msgstr "kontrola przybliżenia"
+
+#: models.py:70
+msgid "Street View control"
+msgstr "kontrola Street View"
+
+#: models.py:78
+msgid "Map"
+msgstr "Mapa"
+
+#: templates/cms/plugins/googlemap.html:83
+msgid "Your address: "
+msgstr "Twój adres"
+
+#: templates/cms/plugins/googlemap.html:85
+msgid "Calculate route"
+msgstr "Oblicz trasę"

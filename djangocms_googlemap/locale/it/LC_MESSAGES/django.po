@@ -1,0 +1,155 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# yakky <i.spalletti@nephila.it>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: django-cms\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-02-06 14:10+0100\n"
+"PO-Revision-Date: 2014-02-13 20:40+0000\n"
+"Last-Translator: yakky <i.spalletti@nephila.it>\n"
+"Language-Team: Italian (http://www.transifex.com/projects/p/django-cms/language/it/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: it\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: cms_plugins.py:12
+msgid "Google Map"
+msgstr "Google Map"
+
+#: cms_plugins.py:21
+msgid "Advanced"
+msgstr "Avanzato"
+
+#: forms.py:25
+msgid "Must be a positive integer followed by “px” or “%”."
+msgstr "Deve essere un intero seguito da “px” o \"%\""
+
+#: forms.py:28
+msgid "Must be a positive integer followed by “px”."
+msgstr "Deve essere un intero seguito da “px”."
+
+#: models.py:13
+msgid "map title"
+msgstr "titolo mappa"
+
+#: models.py:16
+msgid "address"
+msgstr "indirizzo"
+
+#: models.py:17
+msgid "zip code"
+msgstr "codice postale"
+
+#: models.py:18
+msgid "city"
+msgstr "città"
+
+#: models.py:21
+msgid "additional content"
+msgstr "contenuti aggiuntivi"
+
+#: models.py:22
+msgid "Displayed under address in the bubble."
+msgstr "Mostrato sotto l'indirizzo nel fumetto."
+
+#: models.py:26
+msgid "zoom level"
+msgstr "livello di zoom"
+
+#: models.py:29
+msgid "latitude"
+msgstr "latitudine"
+
+#: models.py:30
+msgid "Use latitude & longitude to fine tune the map position."
+msgstr "Usa latitudine e longitudine per perfezionare la posizione sulla mappa."
+
+#: models.py:33
+msgid "longitude"
+msgstr "longitudine"
+
+#: models.py:36
+msgid "route planer title"
+msgstr "titolo del route planer"
+
+#: models.py:37
+msgid "Calculate your fastest way to here"
+msgstr "Calcola il percorso più veloce fino a qui"
+
+#: models.py:39
+msgid "route planer"
+msgstr "route planer"
+
+#: models.py:42
+msgid "width"
+msgstr "larghezza"
+
+#: models.py:43
+msgid "Plugin width (in pixels or percent)."
+msgstr "Larghezza del plugin (in pixel o percentuale)."
+
+#: models.py:46
+msgid "height"
+msgstr "altezza"
+
+#: models.py:47
+msgid "Plugin height (in pixels)."
+msgstr "Altezza del plugin (in pixel)."
+
+#: models.py:50
+msgid "info window"
+msgstr "finestra informazioni"
+
+#: models.py:51
+msgid "Show textbox over marker"
+msgstr "Mostra area di testo sopra il marker"
+
+#: models.py:54
+msgid "scrollwheel"
+msgstr "ruota di scorrimento"
+
+#: models.py:55
+msgid "Enable scrollwheel zooming on the map"
+msgstr "Usa ruota di scorrimento per lo zoom della mappa"
+
+#: models.py:58
+msgid "double click zoom"
+msgstr "zoom con doppio click"
+
+#: models.py:60
+msgid "draggable"
+msgstr "trascinabile"
+
+#: models.py:63
+msgid "keyboard shortcuts"
+msgstr "scorciatoie da tastiera"
+
+#: models.py:65
+msgid "Pan control"
+msgstr "Controllo di spostamento"
+
+#: models.py:67
+msgid "zoom control"
+msgstr "controllo zoom"
+
+#: models.py:70
+msgid "Street View control"
+msgstr "Controllo Street View"
+
+#: models.py:78
+msgid "Map"
+msgstr "Mappa"
+
+#: templates/cms/plugins/googlemap.html:83
+msgid "Your address: "
+msgstr "Il tuo indirizzo:"
+
+#: templates/cms/plugins/googlemap.html:85
+msgid "Calculate route"
+msgstr "Calcola il percorso"

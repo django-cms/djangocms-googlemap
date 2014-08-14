@@ -1,0 +1,156 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Aryan Baghi <aryan@baghi.id.ir>, 2014
+# hamitreza <hamitreza@gmail.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: django-cms\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-02-06 14:10+0100\n"
+"PO-Revision-Date: 2014-05-29 20:11+0000\n"
+"Last-Translator: hamitreza <hamitreza@gmail.com>\n"
+"Language-Team: Persian (http://www.transifex.com/projects/p/django-cms/language/fa/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fa\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: cms_plugins.py:12
+msgid "Google Map"
+msgstr "نقشه Google"
+
+#: cms_plugins.py:21
+msgid "Advanced"
+msgstr "پيشرفته"
+
+#: forms.py:25
+msgid "Must be a positive integer followed by “px” or “%”."
+msgstr "باید یک عدد صحیح مثبت و به دنبال آن \"px\" یا \"%\" باشد."
+
+#: forms.py:28
+msgid "Must be a positive integer followed by “px”."
+msgstr "باید یک عدد صحیح مثبت و به دنبال آن \"px\" باشد."
+
+#: models.py:13
+msgid "map title"
+msgstr "عنوان نقشه"
+
+#: models.py:16
+msgid "address"
+msgstr "آدرس"
+
+#: models.py:17
+msgid "zip code"
+msgstr "کد پستی"
+
+#: models.py:18
+msgid "city"
+msgstr "شهر"
+
+#: models.py:21
+msgid "additional content"
+msgstr "محتوای بیشتر"
+
+#: models.py:22
+msgid "Displayed under address in the bubble."
+msgstr "نمايش داده زير آدرس درون حباب."
+
+#: models.py:26
+msgid "zoom level"
+msgstr "درجه‌ی بزرگ‌نمایی"
+
+#: models.py:29
+msgid "latitude"
+msgstr "عرض جغرافیایی"
+
+#: models.py:30
+msgid "Use latitude & longitude to fine tune the map position."
+msgstr "برای تنظیم دقیق نقشه از طول و عرض جغرافیایی استفاده کنید."
+
+#: models.py:33
+msgid "longitude"
+msgstr "طول جغرافیایی"
+
+#: models.py:36
+msgid "route planer title"
+msgstr "عنوان برنامه‌ریز مسیر"
+
+#: models.py:37
+msgid "Calculate your fastest way to here"
+msgstr "سریع‌ترین راه به اینجا را محاسبه کن."
+
+#: models.py:39
+msgid "route planer"
+msgstr "برنامه‌ریز مسیر"
+
+#: models.py:42
+msgid "width"
+msgstr "عرض"
+
+#: models.py:43
+msgid "Plugin width (in pixels or percent)."
+msgstr "عرض پلاگین (برحسب پیکسل یا درصد)"
+
+#: models.py:46
+msgid "height"
+msgstr "ارتفاع"
+
+#: models.py:47
+msgid "Plugin height (in pixels)."
+msgstr "ارتفاع پلاگین (برحسب پیکسل)"
+
+#: models.py:50
+msgid "info window"
+msgstr "پنجره اطلاعات"
+
+#: models.py:51
+msgid "Show textbox over marker"
+msgstr "نمایش کادر نوشته روی محل نشانه گزاری شده"
+
+#: models.py:54
+msgid "scrollwheel"
+msgstr "چرخ اسکرول"
+
+#: models.py:55
+msgid "Enable scrollwheel zooming on the map"
+msgstr "فعالسازی بزرگنمایی با اسکرول موس در نقشه"
+
+#: models.py:58
+msgid "double click zoom"
+msgstr "بزرگنمایی دو کلیکی"
+
+#: models.py:60
+msgid "draggable"
+msgstr "قابلیت کشیدن"
+
+#: models.py:63
+msgid "keyboard shortcuts"
+msgstr "کلیدهای میانبر"
+
+#: models.py:65
+msgid "Pan control"
+msgstr "کنترل پنل "
+
+#: models.py:67
+msgid "zoom control"
+msgstr "کنترل بزرگنمایی"
+
+#: models.py:70
+msgid "Street View control"
+msgstr "کنترل استریت ویو"
+
+#: models.py:78
+msgid "Map"
+msgstr "نقشه"
+
+#: templates/cms/plugins/googlemap.html:83
+msgid "Your address: "
+msgstr "آدرس شما:"
+
+#: templates/cms/plugins/googlemap.html:85
+msgid "Calculate route"
+msgstr "محاسبه مسیر"

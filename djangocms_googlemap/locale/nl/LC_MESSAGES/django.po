@@ -1,0 +1,156 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# René Mulder <rene@ytec.nl>, 2014
+# kurdyma <transifex.com@kurdyenviolien.nl>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: django-cms\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-02-06 14:10+0100\n"
+"PO-Revision-Date: 2014-03-21 09:50+0000\n"
+"Last-Translator: René Mulder <rene@ytec.nl>\n"
+"Language-Team: Dutch (http://www.transifex.com/projects/p/django-cms/language/nl/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: nl\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: cms_plugins.py:12
+msgid "Google Map"
+msgstr "Google kaart"
+
+#: cms_plugins.py:21
+msgid "Advanced"
+msgstr "Geavanceerd"
+
+#: forms.py:25
+msgid "Must be a positive integer followed by “px” or “%”."
+msgstr "Waarde groter dan of gelijk aan 0 en gevolgd door \"px\" of \"%\" vereist."
+
+#: forms.py:28
+msgid "Must be a positive integer followed by “px”."
+msgstr "Waarde groter dan of gelijk aan 0 en gevolgd door \"px\" vereist."
+
+#: models.py:13
+msgid "map title"
+msgstr "kaart titel"
+
+#: models.py:16
+msgid "address"
+msgstr "adres"
+
+#: models.py:17
+msgid "zip code"
+msgstr "postcode"
+
+#: models.py:18
+msgid "city"
+msgstr "stad"
+
+#: models.py:21
+msgid "additional content"
+msgstr "aanvullende inhoud"
+
+#: models.py:22
+msgid "Displayed under address in the bubble."
+msgstr "Weergegeven adres in de popup."
+
+#: models.py:26
+msgid "zoom level"
+msgstr "zoom-niveau"
+
+#: models.py:29
+msgid "latitude"
+msgstr "breedtegraad"
+
+#: models.py:30
+msgid "Use latitude & longitude to fine tune the map position."
+msgstr "Gebruik breedtegraad & lengtegraad om de positie op de kaart nauwkeurig in te stellen."
+
+#: models.py:33
+msgid "longitude"
+msgstr "lengtegraad"
+
+#: models.py:36
+msgid "route planer title"
+msgstr "routeplanner-titel"
+
+#: models.py:37
+msgid "Calculate your fastest way to here"
+msgstr "Bereken de snelste weg hier naartoe"
+
+#: models.py:39
+msgid "route planer"
+msgstr "routeplanner"
+
+#: models.py:42
+msgid "width"
+msgstr "breedte"
+
+#: models.py:43
+msgid "Plugin width (in pixels or percent)."
+msgstr "Breedte van de plugin (in pixels of percentage)."
+
+#: models.py:46
+msgid "height"
+msgstr "hoogte"
+
+#: models.py:47
+msgid "Plugin height (in pixels)."
+msgstr "Hoogte van de plugin (in pixels)."
+
+#: models.py:50
+msgid "info window"
+msgstr "info venster"
+
+#: models.py:51
+msgid "Show textbox over marker"
+msgstr "Toon tekstbox over de markering"
+
+#: models.py:54
+msgid "scrollwheel"
+msgstr "scrollwiel"
+
+#: models.py:55
+msgid "Enable scrollwheel zooming on the map"
+msgstr "Scrollwiel inschakelen om te zoomen op de kaart"
+
+#: models.py:58
+msgid "double click zoom"
+msgstr "dubbelklik zoom"
+
+#: models.py:60
+msgid "draggable"
+msgstr "sleepbaar"
+
+#: models.py:63
+msgid "keyboard shortcuts"
+msgstr "sneltoetsen"
+
+#: models.py:65
+msgid "Pan control"
+msgstr "Pan control"
+
+#: models.py:67
+msgid "zoom control"
+msgstr "zoom control"
+
+#: models.py:70
+msgid "Street View control"
+msgstr "Street View control"
+
+#: models.py:78
+msgid "Map"
+msgstr "Kaart"
+
+#: templates/cms/plugins/googlemap.html:83
+msgid "Your address: "
+msgstr "Uw adres:"
+
+#: templates/cms/plugins/googlemap.html:85
+msgid "Calculate route"
+msgstr "Bereken route"

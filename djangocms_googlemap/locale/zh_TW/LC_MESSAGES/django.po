@@ -1,0 +1,155 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# kochin <kochinc@outlook.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: django-cms\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-02-06 14:10+0100\n"
+"PO-Revision-Date: 2014-03-05 03:10+0000\n"
+"Last-Translator: kochin <kochinc@outlook.com>\n"
+"Language-Team: Chinese (Taiwan) (http://www.transifex.com/projects/p/django-cms/language/zh_TW/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: cms_plugins.py:12
+msgid "Google Map"
+msgstr "谷歌地圖"
+
+#: cms_plugins.py:21
+msgid "Advanced"
+msgstr "進階"
+
+#: forms.py:25
+msgid "Must be a positive integer followed by “px” or “%”."
+msgstr "必須為正整數，後面跟隨著 “px” 或 “%”。"
+
+#: forms.py:28
+msgid "Must be a positive integer followed by “px”."
+msgstr "必須為正整數，後面跟隨著 “px”。"
+
+#: models.py:13
+msgid "map title"
+msgstr "地圖標題"
+
+#: models.py:16
+msgid "address"
+msgstr "地址"
+
+#: models.py:17
+msgid "zip code"
+msgstr "郵遞區號"
+
+#: models.py:18
+msgid "city"
+msgstr "城市"
+
+#: models.py:21
+msgid "additional content"
+msgstr "額外內容"
+
+#: models.py:22
+msgid "Displayed under address in the bubble."
+msgstr "顯示於地址下方的泡泡中。"
+
+#: models.py:26
+msgid "zoom level"
+msgstr "縮放層級"
+
+#: models.py:29
+msgid "latitude"
+msgstr "緯度"
+
+#: models.py:30
+msgid "Use latitude & longitude to fine tune the map position."
+msgstr "使用緯度和經度微調地圖位置。"
+
+#: models.py:33
+msgid "longitude"
+msgstr "經度"
+
+#: models.py:36
+msgid "route planer title"
+msgstr "路線計畫標題"
+
+#: models.py:37
+msgid "Calculate your fastest way to here"
+msgstr "計算你最快到這裡的路線"
+
+#: models.py:39
+msgid "route planer"
+msgstr "路線計畫"
+
+#: models.py:42
+msgid "width"
+msgstr "寬度"
+
+#: models.py:43
+msgid "Plugin width (in pixels or percent)."
+msgstr "插件寬度(以像素或百分比為單位)。"
+
+#: models.py:46
+msgid "height"
+msgstr "高度"
+
+#: models.py:47
+msgid "Plugin height (in pixels)."
+msgstr "插件高度(以像素為單位)。"
+
+#: models.py:50
+msgid "info window"
+msgstr "資訊視窗"
+
+#: models.py:51
+msgid "Show textbox over marker"
+msgstr "在標記上顯示文字框"
+
+#: models.py:54
+msgid "scrollwheel"
+msgstr "滾輪"
+
+#: models.py:55
+msgid "Enable scrollwheel zooming on the map"
+msgstr "在地圖上啟用滾輪縮放"
+
+#: models.py:58
+msgid "double click zoom"
+msgstr "雙擊縮放"
+
+#: models.py:60
+msgid "draggable"
+msgstr "可拖拽"
+
+#: models.py:63
+msgid "keyboard shortcuts"
+msgstr "鍵盤快捷鍵"
+
+#: models.py:65
+msgid "Pan control"
+msgstr "平移控制"
+
+#: models.py:67
+msgid "zoom control"
+msgstr "縮放控制"
+
+#: models.py:70
+msgid "Street View control"
+msgstr "街景控制"
+
+#: models.py:78
+msgid "Map"
+msgstr "地圖"
+
+#: templates/cms/plugins/googlemap.html:83
+msgid "Your address: "
+msgstr "您的地址："
+
+#: templates/cms/plugins/googlemap.html:85
+msgid "Calculate route"
+msgstr "計算路線"

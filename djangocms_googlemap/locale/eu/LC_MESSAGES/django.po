@@ -1,0 +1,155 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Ales Zabala Alava <shagi@gisa-elkartea.org>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: django-cms\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-02-06 14:10+0100\n"
+"PO-Revision-Date: 2014-03-03 19:11+0000\n"
+"Last-Translator: Ales Zabala Alava <shagi@gisa-elkartea.org>\n"
+"Language-Team: Basque (http://www.transifex.com/projects/p/django-cms/language/eu/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: eu\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: cms_plugins.py:12
+msgid "Google Map"
+msgstr "Google Map"
+
+#: cms_plugins.py:21
+msgid "Advanced"
+msgstr "Aurreratua"
+
+#: forms.py:25
+msgid "Must be a positive integer followed by “px” or “%”."
+msgstr "Zenbaki positibo bat izan behar du pixeletan edo portzentailetan."
+
+#: forms.py:28
+msgid "Must be a positive integer followed by “px”."
+msgstr "Zenbaki positibo bat izan behar du pixeletan."
+
+#: models.py:13
+msgid "map title"
+msgstr "maparen izenburua"
+
+#: models.py:16
+msgid "address"
+msgstr "helbidea"
+
+#: models.py:17
+msgid "zip code"
+msgstr "posta-kodea"
+
+#: models.py:18
+msgid "city"
+msgstr "hiria"
+
+#: models.py:21
+msgid "additional content"
+msgstr "eduki gehigarria"
+
+#: models.py:22
+msgid "Displayed under address in the bubble."
+msgstr "Burbuilan helbidearen azpian agertzen da."
+
+#: models.py:26
+msgid "zoom level"
+msgstr "zoom maila"
+
+#: models.py:29
+msgid "latitude"
+msgstr "latitudea"
+
+#: models.py:30
+msgid "Use latitude & longitude to fine tune the map position."
+msgstr "Latitude eta longitudea erabili mapan kokapen fintzeko."
+
+#: models.py:33
+msgid "longitude"
+msgstr "longitudea"
+
+#: models.py:36
+msgid "route planer title"
+msgstr "ibilbide planifikatzailearen izenburua"
+
+#: models.py:37
+msgid "Calculate your fastest way to here"
+msgstr "Hona heltzeko bide azkarrena kalkulatu"
+
+#: models.py:39
+msgid "route planer"
+msgstr "ibilbide planifikatzailea"
+
+#: models.py:42
+msgid "width"
+msgstr "zabalera"
+
+#: models.py:43
+msgid "Plugin width (in pixels or percent)."
+msgstr "Pluginaren zabalera (pixeletan edo portzentailetan)."
+
+#: models.py:46
+msgid "height"
+msgstr "altuera"
+
+#: models.py:47
+msgid "Plugin height (in pixels)."
+msgstr "Pluginaren altuera (pixeletan)."
+
+#: models.py:50
+msgid "info window"
+msgstr "informazio leihoa"
+
+#: models.py:51
+msgid "Show textbox over marker"
+msgstr "Markaren gainean testu kutxa ikusi"
+
+#: models.py:54
+msgid "scrollwheel"
+msgstr "sagu gurpila"
+
+#: models.py:55
+msgid "Enable scrollwheel zooming on the map"
+msgstr "Gaitu saguaren gurpilarekin zoom egitea"
+
+#: models.py:58
+msgid "double click zoom"
+msgstr "klik bikoitzeko zooma"
+
+#: models.py:60
+msgid "draggable"
+msgstr "arrastagarria"
+
+#: models.py:63
+msgid "keyboard shortcuts"
+msgstr "teklatuko lasterbideak"
+
+#: models.py:65
+msgid "Pan control"
+msgstr "Panoramika kontrola"
+
+#: models.py:67
+msgid "zoom control"
+msgstr "zoom kontrola"
+
+#: models.py:70
+msgid "Street View control"
+msgstr "Kale Ikuspegiaren kontrola"
+
+#: models.py:78
+msgid "Map"
+msgstr "Mapa"
+
+#: templates/cms/plugins/googlemap.html:83
+msgid "Your address: "
+msgstr "Zure helbidea: "
+
+#: templates/cms/plugins/googlemap.html:85
+msgid "Calculate route"
+msgstr "Ibilbidea kalkulatu"

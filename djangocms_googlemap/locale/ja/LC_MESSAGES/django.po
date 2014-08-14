@@ -1,0 +1,154 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+msgid ""
+msgstr ""
+"Project-Id-Version: django-cms\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-02-06 14:10+0100\n"
+"PO-Revision-Date: 2014-02-06 13:31+0000\n"
+"Last-Translator: Chive <kim@smuzey.ch>\n"
+"Language-Team: Japanese (http://www.transifex.com/projects/p/django-cms/language/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: cms_plugins.py:12
+msgid "Google Map"
+msgstr "Googleマップ"
+
+#: cms_plugins.py:21
+msgid "Advanced"
+msgstr "詳細設定"
+
+#: forms.py:25
+msgid "Must be a positive integer followed by “px” or “%”."
+msgstr "正の整数の後に “px” または “%” を続ける形式でなければなりません。"
+
+#: forms.py:28
+msgid "Must be a positive integer followed by “px”."
+msgstr "正の整数の後に “px” を続ける形式でなければなりません。"
+
+#: models.py:13
+msgid "map title"
+msgstr "地図タイトル"
+
+#: models.py:16
+msgid "address"
+msgstr "住所"
+
+#: models.py:17
+msgid "zip code"
+msgstr "郵便番号"
+
+#: models.py:18
+msgid "city"
+msgstr "都市"
+
+#: models.py:21
+msgid "additional content"
+msgstr "追加のコンテンツ"
+
+#: models.py:22
+msgid "Displayed under address in the bubble."
+msgstr "バブルのアドレスの下に表示されます。"
+
+#: models.py:26
+msgid "zoom level"
+msgstr "ズームレベル"
+
+#: models.py:29
+msgid "latitude"
+msgstr "緯度"
+
+#: models.py:30
+msgid "Use latitude & longitude to fine tune the map position."
+msgstr "マップの位置を細かく指定するには、緯度と経度を使ってください。"
+
+#: models.py:33
+msgid "longitude"
+msgstr "経度"
+
+#: models.py:36
+msgid "route planer title"
+msgstr "経路検索のタイトル"
+
+#: models.py:37
+msgid "Calculate your fastest way to here"
+msgstr "ここへの最短経路を計算します"
+
+#: models.py:39
+msgid "route planer"
+msgstr "経路検索"
+
+#: models.py:42
+msgid "width"
+msgstr "幅"
+
+#: models.py:43
+msgid "Plugin width (in pixels or percent)."
+msgstr "プラグインの幅 (ピクセルまたはパーセント指定) です。"
+
+#: models.py:46
+msgid "height"
+msgstr "高さ"
+
+#: models.py:47
+msgid "Plugin height (in pixels)."
+msgstr "プラグインの高さ (ピクセル) です。"
+
+#: models.py:50
+msgid "info window"
+msgstr ""
+
+#: models.py:51
+msgid "Show textbox over marker"
+msgstr ""
+
+#: models.py:54
+msgid "scrollwheel"
+msgstr ""
+
+#: models.py:55
+msgid "Enable scrollwheel zooming on the map"
+msgstr ""
+
+#: models.py:58
+msgid "double click zoom"
+msgstr ""
+
+#: models.py:60
+msgid "draggable"
+msgstr ""
+
+#: models.py:63
+msgid "keyboard shortcuts"
+msgstr ""
+
+#: models.py:65
+msgid "Pan control"
+msgstr ""
+
+#: models.py:67
+msgid "zoom control"
+msgstr ""
+
+#: models.py:70
+msgid "Street View control"
+msgstr ""
+
+#: models.py:78
+msgid "Map"
+msgstr "地図"
+
+#: templates/cms/plugins/googlemap.html:83
+msgid "Your address: "
+msgstr "あなたの住所"
+
+#: templates/cms/plugins/googlemap.html:85
+msgid "Calculate route"
+msgstr "経路を検索"

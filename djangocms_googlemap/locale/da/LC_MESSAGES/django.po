@@ -1,0 +1,155 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# valberg <valberg@orn.li>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: django-cms\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-02-06 14:10+0100\n"
+"PO-Revision-Date: 2014-03-03 22:00+0000\n"
+"Last-Translator: valberg <valberg@orn.li>\n"
+"Language-Team: Danish (http://www.transifex.com/projects/p/django-cms/language/da/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: da\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: cms_plugins.py:12
+msgid "Google Map"
+msgstr "Google Kort"
+
+#: cms_plugins.py:21
+msgid "Advanced"
+msgstr "Avanceret"
+
+#: forms.py:25
+msgid "Must be a positive integer followed by “px” or “%”."
+msgstr "Skal være et positivt heltal efterfulgt af \"px\" eller \"%\"."
+
+#: forms.py:28
+msgid "Must be a positive integer followed by “px”."
+msgstr "Skal være et positivt heltal efterfulgt af \"px\"."
+
+#: models.py:13
+msgid "map title"
+msgstr "kort titel"
+
+#: models.py:16
+msgid "address"
+msgstr "adresse"
+
+#: models.py:17
+msgid "zip code"
+msgstr "postnummer"
+
+#: models.py:18
+msgid "city"
+msgstr "by"
+
+#: models.py:21
+msgid "additional content"
+msgstr "ekstra indhold"
+
+#: models.py:22
+msgid "Displayed under address in the bubble."
+msgstr "Vist under adressen i boblen."
+
+#: models.py:26
+msgid "zoom level"
+msgstr "zoom niveau"
+
+#: models.py:29
+msgid "latitude"
+msgstr "breddegrad"
+
+#: models.py:30
+msgid "Use latitude & longitude to fine tune the map position."
+msgstr "Brug længde- og breddegrad til at finjustere kortpositionen."
+
+#: models.py:33
+msgid "longitude"
+msgstr "længdegrad"
+
+#: models.py:36
+msgid "route planer title"
+msgstr "ruteplanlægger titel"
+
+#: models.py:37
+msgid "Calculate your fastest way to here"
+msgstr "Udregn din hurtigste rute hertil"
+
+#: models.py:39
+msgid "route planer"
+msgstr "ruteplanlægger"
+
+#: models.py:42
+msgid "width"
+msgstr "bredde"
+
+#: models.py:43
+msgid "Plugin width (in pixels or percent)."
+msgstr "Plugin bredde (i pixels eller procent)."
+
+#: models.py:46
+msgid "height"
+msgstr "højde"
+
+#: models.py:47
+msgid "Plugin height (in pixels)."
+msgstr "Plugin højde (i pixels)."
+
+#: models.py:50
+msgid "info window"
+msgstr "info vindue"
+
+#: models.py:51
+msgid "Show textbox over marker"
+msgstr "Vis tekstbox over markør"
+
+#: models.py:54
+msgid "scrollwheel"
+msgstr "rullehjul"
+
+#: models.py:55
+msgid "Enable scrollwheel zooming on the map"
+msgstr "Gør det muligt at bruge rullehjul til at zoome på kortet"
+
+#: models.py:58
+msgid "double click zoom"
+msgstr "dobbelklik zoom"
+
+#: models.py:60
+msgid "draggable"
+msgstr "trækbart"
+
+#: models.py:63
+msgid "keyboard shortcuts"
+msgstr "tastatursgenveje"
+
+#: models.py:65
+msgid "Pan control"
+msgstr "Panoreringskontrol"
+
+#: models.py:67
+msgid "zoom control"
+msgstr "zoomkontrol"
+
+#: models.py:70
+msgid "Street View control"
+msgstr "Street View kontrol"
+
+#: models.py:78
+msgid "Map"
+msgstr "Kort"
+
+#: templates/cms/plugins/googlemap.html:83
+msgid "Your address: "
+msgstr "Din adresse:"
+
+#: templates/cms/plugins/googlemap.html:85
+msgid "Calculate route"
+msgstr "Udregn rute"
