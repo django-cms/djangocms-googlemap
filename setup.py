@@ -25,7 +25,7 @@ setup(
     author='Divio AG',
     author_email='info@divio.ch',
     url='https://github.com/divio/djangocms-googlemap',
-    packages=['djangocms_googlemap', 'djangocms_googlemap.migrations'],
+    packages=['djangocms_googlemap', 'djangocms_googlemap.migrations', 'djangocms_googlemap.migrations_django'],
     license='LICENSE.txt',
     platforms=['OS Independent'],
     classifiers=CLASSIFIERS,
