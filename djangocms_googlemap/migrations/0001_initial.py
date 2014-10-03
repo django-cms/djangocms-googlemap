@@ -11,16 +11,17 @@ class Migration(SchemaMigration):
         table_names = connection.introspection.table_names()
         if 'cmsplugin_googlemap' in table_names or 'googlemap_googlemap' in table_names:
             # Rename tables
+            # Get existing columns before renaming, because doing it afterwards won't always work.
             if 'cmsplugin_googlemap' in table_names:
+                description = connection.introspection.get_table_description(connection.cursor(), 'cmsplugin_googlemap')
                 db.rename_table('cmsplugin_googlemap', 'djangocms_googlemap_googlemap')
             elif 'googlemap_googlemap' in table_names:
+                description = connection.introspection.get_table_description(connection.cursor(), 'googlemap_googlemap')
                 db.rename_table('googlemap_googlemap', 'djangocms_googlemap_googlemap')
 
             # Check for missing fields from previous migrations
             # (0013_auto__add_field_googlemap_info_window__add_field_googlemap_scrollwheel.py)
-
-            # Get existing columns
-            description = connection.introspection.get_table_description(connection.cursor(), 'djangocms_googlemap_googlemap')
+            
             columns = [c[0] for c in description]
 
             # Add missing columns
