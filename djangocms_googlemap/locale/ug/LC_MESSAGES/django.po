@@ -3,104 +3,103 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Jiří Vírava <appukonrad@gmail.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: django-cms\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-02-06 14:10+0100\n"
-"PO-Revision-Date: 2014-08-20 15:01+0000\n"
-"Last-Translator: Jiří Vírava <appukonrad@gmail.com>\n"
-"Language-Team: Czech (http://www.transifex.com/projects/p/django-cms/language/cs/)\n"
+"PO-Revision-Date: 2014-02-06 13:14+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Uighur (http://www.transifex.com/projects/p/django-cms/language/ug/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: cs\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"Language: ug\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: cms_plugins.py:12
 msgid "Google Map"
-msgstr "Google mapa"
+msgstr ""
 
 #: cms_plugins.py:21
 msgid "Advanced"
-msgstr "Pokročilé"
+msgstr ""
 
 #: forms.py:25
 msgid "Must be a positive integer followed by “px” or “%”."
-msgstr "Musí být kladné celé číslo následováno \"px\" nebo \"%\"."
+msgstr ""
 
 #: forms.py:28
 msgid "Must be a positive integer followed by “px”."
-msgstr "Musí být  kladné celé číslo následované \"px\"."
+msgstr ""
 
 #: models.py:13
 msgid "map title"
-msgstr "popisek mapy"
+msgstr ""
 
 #: models.py:16
 msgid "address"
-msgstr "adresa"
+msgstr ""
 
 #: models.py:17
 msgid "zip code"
-msgstr "PSČ"
+msgstr ""
 
 #: models.py:18
 msgid "city"
-msgstr "město"
+msgstr ""
 
 #: models.py:21
 msgid "additional content"
-msgstr "další obsah"
+msgstr ""
 
 #: models.py:22
 msgid "Displayed under address in the bubble."
-msgstr "Zobrazeno pod adresou v bublině."
+msgstr ""
 
 #: models.py:26
 msgid "zoom level"
-msgstr "úroveň přiblížení"
+msgstr ""
 
 #: models.py:29
 msgid "latitude"
-msgstr "zeměpisná šířka"
+msgstr ""
 
 #: models.py:30
 msgid "Use latitude & longitude to fine tune the map position."
-msgstr "Použijte zeměpisnou šířku a délku, aby se doladila mapa polohy."
+msgstr ""
 
 #: models.py:33
 msgid "longitude"
-msgstr "zeměpisná délka"
+msgstr ""
 
 #: models.py:36
 msgid "route planer title"
-msgstr "popisek plánovače cesty"
+msgstr ""
 
 #: models.py:37
 msgid "Calculate your fastest way to here"
-msgstr "Spočítat nejrychlejší cestu"
+msgstr ""
 
 #: models.py:39
 msgid "route planer"
-msgstr "plánovač cesty"
+msgstr ""
 
 #: models.py:42
 msgid "width"
-msgstr "šírka"
+msgstr ""
 
 #: models.py:43
 msgid "Plugin width (in pixels or percent)."
-msgstr "Šířka pluginu (v pixelech nebo procentech)."
+msgstr ""
 
 #: models.py:46
 msgid "height"
-msgstr "výška"
+msgstr ""
 
 #: models.py:47
 msgid "Plugin height (in pixels)."
-msgstr "Výška pluginu (v pixelech)."
+msgstr ""
 
 #: models.py:50
 msgid "info window"
@@ -136,20 +135,20 @@ msgstr ""
 
 #: models.py:67
 msgid "zoom control"
-msgstr "ovládání zoomu"
+msgstr ""
 
 #: models.py:70
 msgid "Street View control"
-msgstr "Street View ovládání"
+msgstr ""
 
 #: models.py:78
 msgid "Map"
-msgstr "Mapa"
+msgstr ""
 
 #: templates/cms/plugins/googlemap.html:83
 msgid "Your address: "
-msgstr "Vaše adresa:"
+msgstr ""
 
 #: templates/cms/plugins/googlemap.html:85
 msgid "Calculate route"
-msgstr "Spočítat cestu"
+msgstr ""
