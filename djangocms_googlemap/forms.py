@@ -1,5 +1,7 @@
 # coding: utf-8
+from distutils.version import LooseVersion
 import re
+import django
 
 from django.forms.models import ModelForm
 from django.utils.translation import ugettext_lazy as _
@@ -7,6 +9,7 @@ from django.utils.translation import ugettext_lazy as _
 from .models import GoogleMap
 
 
+DJANGO_1_5 = LooseVersion(django.get_version()) < LooseVersion('1.6')
 CSS_WIDTH_RE = re.compile(r'^\d+(?:px|%)$')
 CSS_HEIGHT_RE = re.compile(r'^\d+px$')
 
@@ -14,7 +17,8 @@ CSS_HEIGHT_RE = re.compile(r'^\d+px$')
 class GoogleMapForm(ModelForm):
     class Meta:
         model = GoogleMap
-        fields = '__all__'
+        if not DJANGO_1_5:
+            fields = '__all__'
 
     def clean(self):
         cleaned_data = super(GoogleMapForm, self).clean()
