@@ -16,6 +16,7 @@ CSS_HEIGHT_RE = re.compile(r'^\d+px$')
 
 class GoogleMapForm(ModelForm):
     class Meta:
+        fields = '__all__'
         model = GoogleMap
         if not DJANGO_1_5:
             fields = '__all__'
