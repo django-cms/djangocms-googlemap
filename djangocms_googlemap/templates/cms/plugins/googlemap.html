@@ -29,7 +29,6 @@
     function initializeMaps () {
         for (key in _djangocms_googlemap_mapsToInitialize) {
             if (_djangocms_googlemap_mapsToInitialize.hasOwnProperty(key)) {
-                console.log(key);
                 initializeMap(key, _djangocms_googlemap_mapsToInitialize[key]);
             }
         }
