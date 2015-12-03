@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+
 from setuptools import setup
+
 from djangocms_googlemap import __version__
 
 CLASSIFIERS = [
@@ -25,7 +27,11 @@ setup(
     author='Divio AG',
     author_email='info@divio.ch',
     url='https://github.com/divio/djangocms-googlemap',
-    packages=['djangocms_googlemap', 'djangocms_googlemap.migrations', 'djangocms_googlemap.migrations_django'],
+    packages=[
+        'djangocms_googlemap',
+        'djangocms_googlemap.migrations',
+        'djangocms_googlemap.migrations_django'
+    ],
     license='LICENSE.txt',
     platforms=['OS Independent'],
     classifiers=CLASSIFIERS,

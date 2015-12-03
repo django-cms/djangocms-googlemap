@@ -10,7 +10,8 @@ class GoogleMap(CMSPlugin):
     """
     A google maps integration
     """
-    translatable_content_excluded_fields = ['address', 'zipcode', 'width', 'height']
+    translatable_content_excluded_fields = [
+        'address', 'zipcode', 'width', 'height']
 
     title = models.CharField(_("map title"), max_length=100, blank=True,
                              null=True)
