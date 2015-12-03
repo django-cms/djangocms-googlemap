@@ -30,12 +30,12 @@ setup(
     packages=[
         'djangocms_googlemap',
         'djangocms_googlemap.migrations',
-        'djangocms_googlemap.migrations_django'
+        'djangocms_googlemap.south_migrations'
     ],
     license='LICENSE.txt',
     platforms=['OS Independent'],
     classifiers=CLASSIFIERS,
-    long_description=open('README.md').read(),
+    long_description=open('README.rst').read(),
     include_package_data=True,
     zip_safe=False
 )
