@@ -20,8 +20,8 @@
         streetViewControl: {{ object.street_view_control|lower }},
         title: "{{ object.get_title }}",
         address: "{{ object.address }}, {{ object.zipcode }} {{ object.city }}",
-        lat: {{ object.lat }},
-        lng: {{ object.lng }},
+        lat: {% if object.lat != None %}{{ object.lat }}{% else %}null{% endif %},
+        lng: {% if object.lng != None %}{{ object.lng }}{% else %}null{% endif %},
         info_window: {{ object.info_window|lower }},
         content: "{{ object.content }}"
     };
