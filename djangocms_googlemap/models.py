@@ -84,3 +84,9 @@ class GoogleMap(CMSPlugin):
     def get_lat_lng(self):
         if self.lat and self.lng:
             return self.lat, self.lng
+
+    def get_js_lat(self):
+        return str(self.lat) if self.lat else 'null'
+
+    def get_js_lng(self):
+        return str(self.lng) if self.lng else 'null'
