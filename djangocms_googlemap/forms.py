@@ -32,3 +32,6 @@ class GoogleMapForm(ModelForm):
                 self._errors['height'] = self.error_class([
                     _(u'Must be a positive integer followed by “px”.')])
         return cleaned_data
+
+    def clean_style(self):
+        return self.cleaned_data.get('style', '').strip()
