@@ -24,7 +24,8 @@ class GoogleMap(CMSPlugin):
         _("additional content"), max_length=255, blank=True,
         help_text=_('Displayed under address in the bubble.'))
 
-    style = models.TextField(_("custom map style"), blank=True, help_text=_('Use javascript as in'))
+    style = models.TextField(_("custom map style"), blank=True,
+                             help_text=_('Use javascript as in'))
 
     ZOOM_LEVELS = map(lambda c: (c, str(c)), range(22))
     zoom = models.PositiveSmallIntegerField(
