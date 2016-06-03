@@ -16,7 +16,7 @@ class GoogleMapPlugin(CMSPluginBase):
     fieldsets = (
         (None, {
             'fields': ('title', 'address', ('zipcode', 'city',),
-                       'content', 'zoom', ('lat', 'lng'),),
+                       'content', 'zoom', ('lat', 'lng'), 'api_v3_key'),
         }),
         (_('Advanced'), {
             'fields': (('route_planer', 'route_planer_title'),
