@@ -26,7 +26,7 @@ class GoogleMap(CMSPlugin):
 
     style = models.TextField(_("custom map style"), blank=True,
         help_text=_('Provide a valid JSON configuration (escaped). See '
-            'https://developers.google.com/maps/documentation/javascript/styling'))
+            'developers.google.com/maps/documentation/javascript/styling'))
 
     ZOOM_LEVELS = map(lambda c: (c, str(c)), range(22))
     zoom = models.PositiveSmallIntegerField(
