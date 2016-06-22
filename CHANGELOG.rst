@@ -5,6 +5,7 @@ CHANGELOG
 ------------------
 
 * Added changelog
+* Added fields to customise the map style
 * Fixed an issue with multiple googlemaps plugins
 * Moved JavaScript declarations into separate file
   ``static/djangocms_googlemap/djangocms.googlemaps.js``
