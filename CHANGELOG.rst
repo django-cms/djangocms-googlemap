@@ -4,6 +4,7 @@ CHANGELOG
 0.5.0 (UNRELEASED)
 ------------------
 
+* Added changelog
 * Fixed an issue with multiple googlemaps plugins
 * Moved JavaScript declarations into separate file
   ``static/djangocms_googlemap/djangocms.googlemaps.js``
