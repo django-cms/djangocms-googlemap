@@ -2,4 +2,5 @@ include LICENSE.txt
 include README.rst
 recursive-include djangocms_googlemap/locale *
 recursive-include djangocms_googlemap/templates *
+recursive-include djangocms_googlemap/static *
 recursive-exclude * *.py[co]

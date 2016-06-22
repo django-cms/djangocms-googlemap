@@ -2,9 +2,11 @@
 from distutils.version import LooseVersion
 import re
 import django
+import json
 
 from django.forms.models import ModelForm
 from django.utils.translation import ugettext_lazy as _
+from django.core.exceptions import ValidationError
 
 from .models import GoogleMap
 
@@ -34,4 +36,10 @@ class GoogleMapForm(ModelForm):
         return cleaned_data
 
     def clean_style(self):
-        return self.cleaned_data.get('style', '').strip()
+        style = self.cleaned_data.get('style', '').strip()
+        if style:
+            try:
+                json.loads(style)
+            except ValueError:
+                raise ValidationError('Has to be valid JSON', code='invalid')
+        return style

@@ -1,0 +1,48 @@
+{% load i18n staticfiles sekizai_tags %}
+
+<div class="djangocms djangocms-googlemap plugin_googlemap">
+    {% if object.get_title %}
+        <h2>{{ object.get_title }}</h2>
+    {% endif %}
+
+    <div class="djangocms-googlemap-container"
+        data-id="{{ object.pk }}"
+        data-title="{{ object.get_title }}"
+        data-info_content="{{ object.content }}"
+        data-address="{{ object.address }}, {{ object.zipcode }} {{ object.city }}"
+        data-zoom="{{ object.zoom }}"
+        data-scrollwheel="{{ object.scrollwheel|lower }}"
+        data-double_click_zoom="{% if object.double_click_zoom %}false{% else %}true{% endif %}"
+        data-draggable="{{ object.draggable|lower }}"
+        data-keyboard_shortcuts="{{ object.keyboard_shortcuts|lower }}"
+        data-pan_control="{{ object.pan_control|lower }}"
+        data-zoom_control="{{ object.zoom_control|lower }}"
+        data-street_view_control="{{ object.street_view_control|lower }}"
+        data-lat="{% if object.lat %}{{ object.lat }}{% endif %}"
+        data-lng="{% if object.lng %}{{ object.lng }}{% endif %}"
+        data-show_infowindow="{{ object.info_window|lower }}"
+        data-style="{{ object.style }}"
+        style="{% if object.width %}width: {{ object.width }}; {% endif %}{% if object.height %}height: {{ object.height }};{% endif %}"
+        >
+    </div>
+
+    {% if object.route_planer %}
+        <form action="//maps.google.com/" method="get" target="_blank" class="djangocms-googlemap-route-planner">
+            <fieldset>
+                {% if object.route_planer_title %}
+                    <h3>{{ object.route_planer_title }}:</h3>
+                {% endif %}
+                <p>
+                    <label for="field-saddr-{{ object.pk }}">{% trans "Your address: " %}</label>
+                    <input type="text" id="field-saddr-{{ object.pk }}" name="saddr">
+
+                    <label><input type="submit" value="{% trans 'Calculate route' %}"></label>
+                    <input type="hidden" name="daddr" value="{{ object.address }}, {{ object.zipcode }} {{ object.city }}">
+                </p>
+            </fieldset>
+        </form>
+    {% endif %}
+</div>
+
+{% addtoblock "js" %}<script src="//maps-api-ssl.google.com/maps/api/js?v=3"></script>{% endaddtoblock %}
+{% addtoblock "js" %}<script src="{% static 'djangocms_googlemap/js/djangocms.googlemaps.js' %}"></script>{% endaddtoblock %}
