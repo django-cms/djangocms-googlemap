@@ -1,6 +1,71 @@
 {% load i18n sekizai_tags %}
 
 {% addtoblock "js" %}
+
+  <script type="text/javascript">
+function replaceAll(originalString ,search, replacement) {
+      return originalString.replace(new RegExp(search, 'g'), replacement);
+};
+function initializeMap{{ object.pk}}() {
+      // save settings form plugin
+      var container = 'google-map-{{ object.pk }}';
+      var latlng = new google.maps.LatLng(46.94708, 7.445975); // default to switzerland
+
+      var title = "{{ object.get_title }}";
+      var address = "{{ object.address }}, {{ object.zipcode }} {{ object.city }}";
+
+      {% if object.style %}
+        try {
+            var style = JSON.parse(replaceAll(replaceAll("{{ object.style }}", "&quot", "\""), ";", ""));
+        } catch (err){
+            console.log(err);
+            var style = null;
+        }
+      {% else %}
+        var style = null;
+      {% endif %}
+      var options = {
+        zoom: {{ object.zoom }},
+        mapTypeId: google.maps.MapTypeId.ROADMAP, /* ROADMAP, SATELLITE, HYBRID or TERRAIN */
+        scrollwheel: {{ object.scrollwheel|lower }},
+        disableDoubleClickZoom: {% if object.double_click_zoom %}false{% else %}true{% endif %},
+        draggable: {{ object.draggable|lower}},
+        keyboardShortcuts: {{ object.keyboard_shortcuts|lower}},
+        panControl: {{ object.pan_control|lower}},
+        zoomControl: {{ object.zoom_control|lower}},
+        streetViewControl: {{ object.street_view_control|lower}}
+      };
+
+      {% if object.get_lat_lng %}
+        // load latlng from given lat lng settings
+        latlng = new google.maps.LatLng({{ object.get_lat_lng|join:", " }});
+        initGoogleMaps(latlng);
+      {% else %}
+        // load latlng from given address
+        var geocoder = new google.maps.Geocoder();
+          geocoder.geocode({'address': address}, function (results, status) {
+            // check if address can be found if not show default (var latlng)
+            if(status == google.maps.GeocoderStatus.OK) latlng = results[0].geometry.location;
+            initGoogleMaps(latlng);
+          });
+      {% endif %}
+
+      // initialize google maps
+      function initGoogleMaps(latlng) {
+        // overwrite options
+        options.center = latlng;
+        // initialize google map
+        var styledMap = new google.maps.StyledMapType(style, {name: "Styled Map"});
+        var map = new google.maps.Map(document.getElementById(container), options);
+
+        //Set styles
+        map.mapTypes.set('map_style', styledMap);
+        map.setMapTypeId('map_style');
+
+        // create marker
+        var marker = new google.maps.Marker({
+          'position': options.center,
+
 <script type="text/javascript">
 function createMarker(map, title, latlng, show_infowindow, address, info_content) {
       // create marker

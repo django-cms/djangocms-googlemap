@@ -22,7 +22,8 @@ class GoogleMapPlugin(CMSPluginBase):
             'fields': (('route_planer', 'route_planer_title'),
                        ('width', 'height',), 'info_window', 'scrollwheel',
                        'double_click_zoom', 'draggable', 'keyboard_shortcuts',
-                       'pan_control', 'zoom_control', 'street_view_control'),
+                       'pan_control', 'zoom_control', 'street_view_control',
+                       'style'),
         }),
     )
 
