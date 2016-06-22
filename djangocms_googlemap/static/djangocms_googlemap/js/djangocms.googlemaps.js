@@ -57,6 +57,7 @@ djangocms.GoogleMap = {
             panControl: data.pan_control,
             zoomControl: data.zoom_control,
             streetViewControl: data.street_view_control,
+            styles: data.style,
             center: { lat: 46.94708, lng: 7.445975 } // default to switzerland;
         };
 

@@ -11,6 +11,11 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
+        migrations.AddField(
+            model_name='googlemap',
+            name='style',
+            field=models.TextField(help_text='Use javascript as in', verbose_name='custom map style', blank=True),
+        ),
         migrations.AlterField(
             model_name='googlemap',
             name='cmsplugin_ptr',

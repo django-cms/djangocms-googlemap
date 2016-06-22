@@ -21,6 +21,7 @@
         data-lat="{% if object.lat %}{{ object.lat }}{% endif %}"
         data-lng="{% if object.lng %}{{ object.lng }}{% endif %}"
         data-show_infowindow="{{ object.info_window|lower }}"
+        data-style="{{ object.style }}"
         style="{% if object.width %}width: {{ object.width }}; {% endif %}{% if object.height %}height: {{ object.height }};{% endif %}"
         >
     </div>
