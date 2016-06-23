@@ -5,6 +5,10 @@ from setuptools import setup
 
 from djangocms_googlemap import __version__
 
+REQUIREMENTS = [
+    'Django>=1.8',
+]
+
 CLASSIFIERS = [
     'Development Status :: 5 - Production/Stable',
     'Environment :: Web Environment',
