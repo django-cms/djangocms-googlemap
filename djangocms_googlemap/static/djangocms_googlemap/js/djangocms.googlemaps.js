@@ -58,46 +58,80 @@ djangocms.GoogleMap = {
             zoomControl: data.zoom_control,
             streetViewControl: data.street_view_control,
             styles: data.style,
-            center: { lat: 46.94708, lng: 7.445975 } // default to switzerland;
+            center: { lat: 46.94708, lng: 7.445975 }, // default to switzerland;
         };
+
+
+        var marker_tags = container.find('.djangocms-googlemap-marker');
+        var markers = [];
+        var promises = [];
 
         var map = new google.maps.Map(container[0], options);
 
-        // latitute or longitute have presedence over the address when provided
-        // inside the plugin form
-        if (data.lat.length && data.lng.length) {
-            latlng = { lat: parseFloat(data.lat), lng: parseFloat(data.lng) };
-            map.setCenter(latlng);
-            this.addMarker(map, latlng, data);
-        } else {
-            // load latlng from given address
-            var geocoder = new google.maps.Geocoder();
-            geocoder.geocode({ address: data.address }, function (results, status) {
-                // check if address can be found if not show default (var latlng)
-                if (status == google.maps.GeocoderStatus.OK) {
-                    latlng = results[0].geometry.location;
-                    that.addMarker(map, latlng, data);
+        jQuery.each(marker_tags, function(index, marker) {
+            var promise = new Promise(function(resolve, reject) {
+                data = jQuery(marker).data();
+                markers[index] = data;
+
+                // latitute or longitute have presedence over the address when provided
+                // inside the plugin form
+                if (data.lat.length && data.lng.length) {
+                    latlng = {lat: parseFloat(data.lat), lng: parseFloat(data.lng)};
+                    markers[index]['latlng'] = latlng;
+                } else {
+                    // load latlng from given address
+                    var geocoder = new google.maps.Geocoder();
+                    geocoder.geocode({address: data.address}, function (results, status) {
+                        // check if address can be found if not show default (var latlng)
+                        if (status == google.maps.GeocoderStatus.OK) {
+                            latlng = results[0].geometry.location;
+                            markers[index]['latlng'] = latlng;
+                            resolve(markers[index]);
+                        }
+                    });
                 }
             });
-        }
+            promises.push(promise);
+
+        });
+
+        var result = Promise.all(promises);
+        result.then(function() {
+            markers.forEach(function(marker, index) {
+                // center on first marker
+                if (index == 0) {
+                    map.setCenter(marker.latlng);
+                }
+                that.addMarker(map, marker);
+            });
+        })
+
+
     },
 
     /**
-     * Adds a merker to a Google Map instance.
+     * Adds a marker to a Google Map instance.
      *
      * @method _loadMap
      * @param {jQuery} map ``google.maps.Map`` instance
-     * @param {jQuery} latlng proper formated lat/lng coordinates
-     * @param {jQuery} data the data objects from a Google Map instance
+     * @param {jQuery} data the data objects from a Google Map Location instance
      */
-    addMarker: function addMarker(map, latlng, data) {
+    addMarker: function addMarker(map, data) {
         var infoWindow;
+        var that = this;
         var windowContent = '';
-        var marker = new google.maps.Marker({
-            'position': latlng,
+        var marker_properties = {
+            'position': data.latlng,
             'map': map,
             'title': data.title
-        });
+        };
+
+        // add custom marker icon
+        if (data.marker_icon) {
+            marker_properties["icon"] = data.marker_icon;
+        }
+
+        var marker = new google.maps.Marker(marker_properties);
 
         if (data.show_infowindow) {
             // prepare info window
@@ -118,18 +152,22 @@ djangocms.GoogleMap = {
             // show info window
             infowindow.open(map, marker);
 
-            // register click handler if the user has closed the window to reopen it
-            google.maps.event.addListener(marker, 'click', (function (marker) {
-                return function () {
-                    infowindow.open(map, marker);
-                    marker.setAnimation(google.maps.Animation.BOUNCE);
-                    setTimeout(function () { marker.setAnimation(null); }, 750);
-                }
-            })(marker));
         }
 
-        // reposition map
-        map.setCenter(latlng);
+        // register click handler if the user has closed the window to reopen it
+        google.maps.event.addListener(marker, 'click', (function (marker) {
+            return function () {
+                // reposition map
+                map.setCenter(data.latlng);
+                if (data.show_infowindow) {
+                    infowindow.open(map, marker);
+                }
+                marker.setAnimation(google.maps.Animation.BOUNCE);
+                setTimeout(function () { marker.setAnimation(null); }, 750);
+            }
+        })(marker));
+
+
     }
 
 };
