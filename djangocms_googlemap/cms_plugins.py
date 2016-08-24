@@ -1,3 +1,4 @@
+from django.conf import settings
 from django.utils.translation import ugettext_lazy as _
 
 from cms.plugin_base import CMSPluginBase
@@ -31,6 +32,7 @@ class GoogleMapPlugin(CMSPluginBase):
         context.update({
             'object': instance,
             'placeholder': placeholder,
+            'google_api_key': getattr(settings, 'DJANGOCMS_GOOGLEMAP_API_KEY')
         })
         return context
 
