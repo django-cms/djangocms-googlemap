@@ -3,15 +3,16 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Jiří Vírava <appukonrad@gmail.com>, 2014
+# koren <honza@kekorenum.com>, 2015
+# Jiří Vírava <appukonrad@gmail.com>, 2014-2015
 msgid ""
 msgstr ""
-"Project-Id-Version: django-cms\n"
+"Project-Id-Version: django CMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-06 14:10+0100\n"
-"PO-Revision-Date: 2014-08-20 15:01+0000\n"
-"Last-Translator: Jiří Vírava <appukonrad@gmail.com>\n"
-"Language-Team: Czech (http://www.transifex.com/projects/p/django-cms/language/cs/)\n"
+"POT-Creation-Date: 2016-08-25 18:36-0400\n"
+"PO-Revision-Date: 2016-08-25 22:36+0000\n"
+"Last-Translator: Paulo Alvarado <paulo.alvarado@divio.ch>\n"
+"Language-Team: Czech (http://www.transifex.com/divio/django-cms/language/cs/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -26,130 +27,140 @@ msgstr "Google mapa"
 msgid "Advanced"
 msgstr "Pokročilé"
 
-#: forms.py:25
+#: forms.py:32
 msgid "Must be a positive integer followed by “px” or “%”."
 msgstr "Musí být kladné celé číslo následováno \"px\" nebo \"%\"."
 
-#: forms.py:28
+#: forms.py:35
 msgid "Must be a positive integer followed by “px”."
 msgstr "Musí být  kladné celé číslo následované \"px\"."
 
-#: models.py:13
+#: models.py:16
 msgid "map title"
 msgstr "popisek mapy"
 
-#: models.py:16
+#: models.py:19
 msgid "address"
 msgstr "adresa"
 
-#: models.py:17
+#: models.py:20
 msgid "zip code"
 msgstr "PSČ"
 
-#: models.py:18
+#: models.py:21
 msgid "city"
 msgstr "město"
 
-#: models.py:21
+#: models.py:24
 msgid "additional content"
 msgstr "další obsah"
 
-#: models.py:22
+#: models.py:25
 msgid "Displayed under address in the bubble."
 msgstr "Zobrazeno pod adresou v bublině."
 
-#: models.py:26
+#: models.py:27
+msgid "custom map style"
+msgstr ""
+
+#: models.py:28
+msgid ""
+"Provide a valid JSON configuration (escaped). See "
+"developers.google.com/maps/documentation/javascript/styling"
+msgstr ""
+
+#: models.py:33
 msgid "zoom level"
 msgstr "úroveň přiblížení"
 
-#: models.py:29
+#: models.py:36
 msgid "latitude"
 msgstr "zeměpisná šířka"
 
-#: models.py:30
+#: models.py:37
 msgid "Use latitude & longitude to fine tune the map position."
 msgstr "Použijte zeměpisnou šířku a délku, aby se doladila mapa polohy."
 
-#: models.py:33
+#: models.py:40
 msgid "longitude"
 msgstr "zeměpisná délka"
 
-#: models.py:36
-msgid "route planer title"
-msgstr "popisek plánovače cesty"
+#: models.py:43
+msgid "route planner title"
+msgstr ""
 
-#: models.py:37
+#: models.py:44
 msgid "Calculate your fastest way to here"
 msgstr "Spočítat nejrychlejší cestu"
 
-#: models.py:39
-msgid "route planer"
-msgstr "plánovač cesty"
+#: models.py:46
+msgid "route planner"
+msgstr ""
 
-#: models.py:42
+#: models.py:49
 msgid "width"
 msgstr "šírka"
 
-#: models.py:43
+#: models.py:50
 msgid "Plugin width (in pixels or percent)."
 msgstr "Šířka pluginu (v pixelech nebo procentech)."
 
-#: models.py:46
+#: models.py:53
 msgid "height"
 msgstr "výška"
 
-#: models.py:47
+#: models.py:54
 msgid "Plugin height (in pixels)."
 msgstr "Výška pluginu (v pixelech)."
 
-#: models.py:50
+#: models.py:57
 msgid "info window"
-msgstr ""
-
-#: models.py:51
-msgid "Show textbox over marker"
-msgstr ""
-
-#: models.py:54
-msgid "scrollwheel"
-msgstr ""
-
-#: models.py:55
-msgid "Enable scrollwheel zooming on the map"
-msgstr ""
+msgstr "informační okno"
 
 #: models.py:58
-msgid "double click zoom"
-msgstr ""
+msgid "Show textbox over marker"
+msgstr "Ukaž textový box nad značkou"
 
-#: models.py:60
-msgid "draggable"
-msgstr ""
+#: models.py:61
+msgid "scrollwheel"
+msgstr "rolovací kolečko"
 
-#: models.py:63
-msgid "keyboard shortcuts"
-msgstr ""
+#: models.py:62
+msgid "Enable scrollwheel zooming on the map"
+msgstr "Zapne změnu velikosti mapy pomocí kolečka myši"
 
 #: models.py:65
-msgid "Pan control"
-msgstr ""
+msgid "double click zoom"
+msgstr "zvětšení dvojitým poklepáním"
 
 #: models.py:67
+msgid "draggable"
+msgstr "přesouvatelné"
+
+#: models.py:70
+msgid "keyboard shortcuts"
+msgstr "klávesové zkratky"
+
+#: models.py:72
+msgid "Pan control"
+msgstr "Ovládání pohybu mapy"
+
+#: models.py:74
 msgid "zoom control"
 msgstr "ovládání zoomu"
 
-#: models.py:70
+#: models.py:77
 msgid "Street View control"
 msgstr "Street View ovládání"
 
-#: models.py:78
+#: models.py:85
 msgid "Map"
 msgstr "Mapa"
 
-#: templates/cms/plugins/googlemap.html:83
+#: templates/djangocms_googlemap/googlemap.html:36
 msgid "Your address: "
 msgstr "Vaše adresa:"
 
-#: templates/cms/plugins/googlemap.html:85
+#: templates/djangocms_googlemap/googlemap.html:39
 msgid "Calculate route"
 msgstr "Spočítat cestu"
