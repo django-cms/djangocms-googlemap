@@ -2,10 +2,16 @@ CHANGELOG
 =========
 
 
+0.5.2 (UNRELEASED)
+------------------
+
+* Added missing Django migration
+
+
 0.5.1 (2016-06-23)
 ------------------
 
-* Added missing Django 1.6 migration
+* Added missing South migration
 
 
 0.5.0 (2016-06-22)
