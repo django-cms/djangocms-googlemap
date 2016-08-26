@@ -16,8 +16,13 @@ CLASSIFIERS = [
     'Topic :: Communications',
     'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
     'Topic :: Internet :: WWW/HTTP :: Dynamic Content :: Message Boards',
+    'Programming Language :: Python :: 2',
     'Programming Language :: Python :: 2.6',
     'Programming Language :: Python :: 2.7',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.3',
+    'Programming Language :: Python :: 3.4',
+    'Programming Language :: Python :: 3.5',
 ]
 
 setup(
@@ -32,7 +37,7 @@ setup(
         'djangocms_googlemap.migrations',
         'djangocms_googlemap.south_migrations'
     ],
-    license='LICENSE.txt',
+    license='BSD License',
     platforms=['OS Independent'],
     classifiers=CLASSIFIERS,
     long_description=open('README.rst').read(),
