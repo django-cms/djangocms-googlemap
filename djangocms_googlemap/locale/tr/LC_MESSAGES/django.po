@@ -3,14 +3,16 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Cem Yıldız <cem.yildiz@yandex.ru>, 2015
+# Cem Yıldız <cem.yildiz@yandex.ru>, 2015
 msgid ""
 msgstr ""
-"Project-Id-Version: django-cms\n"
+"Project-Id-Version: django CMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-06 14:10+0100\n"
-"PO-Revision-Date: 2014-02-06 13:31+0000\n"
-"Last-Translator: Chive <kim@smuzey.ch>\n"
-"Language-Team: Turkish (http://www.transifex.com/projects/p/django-cms/language/tr/)\n"
+"POT-Creation-Date: 2016-08-25 18:36-0400\n"
+"PO-Revision-Date: 2016-08-25 22:36+0000\n"
+"Last-Translator: Paulo Alvarado <paulo.alvarado@divio.ch>\n"
+"Language-Team: Turkish (http://www.transifex.com/divio/django-cms/language/tr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -25,130 +27,140 @@ msgstr "Google Haritalar"
 msgid "Advanced"
 msgstr "Gelişmiş"
 
-#: forms.py:25
+#: forms.py:32
 msgid "Must be a positive integer followed by “px” or “%”."
 msgstr "sonunda “px” veya “%” yeralan bir pozitif tamsayı olmalı"
 
-#: forms.py:28
+#: forms.py:35
 msgid "Must be a positive integer followed by “px”."
 msgstr "sonunda “px” yeralan bir pozitif tamsayı olmalı"
 
-#: models.py:13
+#: models.py:16
 msgid "map title"
 msgstr "harita başlığı"
 
-#: models.py:16
+#: models.py:19
 msgid "address"
 msgstr "adres"
 
-#: models.py:17
+#: models.py:20
 msgid "zip code"
 msgstr "posta kodu"
 
-#: models.py:18
+#: models.py:21
 msgid "city"
 msgstr "şehir"
 
-#: models.py:21
+#: models.py:24
 msgid "additional content"
 msgstr "ek içerik"
 
-#: models.py:22
+#: models.py:25
 msgid "Displayed under address in the bubble."
+msgstr "Adres altıda baloncuk ile görüntülendi."
+
+#: models.py:27
+msgid "custom map style"
 msgstr ""
 
-#: models.py:26
+#: models.py:28
+msgid ""
+"Provide a valid JSON configuration (escaped). See "
+"developers.google.com/maps/documentation/javascript/styling"
+msgstr ""
+
+#: models.py:33
 msgid "zoom level"
 msgstr "yakınlaştırma seviyesi"
 
-#: models.py:29
+#: models.py:36
 msgid "latitude"
 msgstr "boylam"
 
-#: models.py:30
+#: models.py:37
 msgid "Use latitude & longitude to fine tune the map position."
 msgstr "Harita konumunu ince ayarlamak için enlem ve boylam kullan."
 
-#: models.py:33
+#: models.py:40
 msgid "longitude"
 msgstr "boylam"
 
-#: models.py:36
-msgid "route planer title"
-msgstr "rota planlayıcı başlığı"
+#: models.py:43
+msgid "route planner title"
+msgstr ""
 
-#: models.py:37
+#: models.py:44
 msgid "Calculate your fastest way to here"
 msgstr "Buraya en hızlı yolunu hesapla"
 
-#: models.py:39
-msgid "route planer"
-msgstr "rota planlayıcı"
+#: models.py:46
+msgid "route planner"
+msgstr ""
 
-#: models.py:42
+#: models.py:49
 msgid "width"
 msgstr "genişlik"
 
-#: models.py:43
+#: models.py:50
 msgid "Plugin width (in pixels or percent)."
 msgstr "Eklenti genişliği (piksel ya da yüzde)"
 
-#: models.py:46
+#: models.py:53
 msgid "height"
 msgstr "yükseklik"
 
-#: models.py:47
+#: models.py:54
 msgid "Plugin height (in pixels)."
 msgstr "Eklenti yüksekliği (piksel)"
 
-#: models.py:50
+#: models.py:57
 msgid "info window"
-msgstr ""
-
-#: models.py:51
-msgid "Show textbox over marker"
-msgstr ""
-
-#: models.py:54
-msgid "scrollwheel"
-msgstr ""
-
-#: models.py:55
-msgid "Enable scrollwheel zooming on the map"
-msgstr ""
+msgstr "bilgi penceresi"
 
 #: models.py:58
-msgid "double click zoom"
-msgstr ""
+msgid "Show textbox over marker"
+msgstr "İşaret üzerinde metin kutusu görüntüle"
 
-#: models.py:60
-msgid "draggable"
-msgstr ""
+#: models.py:61
+msgid "scrollwheel"
+msgstr "kaydırma tekerleği"
 
-#: models.py:63
-msgid "keyboard shortcuts"
-msgstr ""
+#: models.py:62
+msgid "Enable scrollwheel zooming on the map"
+msgstr "Haritayı yakınlaştırmak için farenin orta tekerleğini etkinleştir"
 
 #: models.py:65
-msgid "Pan control"
-msgstr ""
+msgid "double click zoom"
+msgstr "yakınlaştırmak için çift tıklayınız"
 
 #: models.py:67
-msgid "zoom control"
-msgstr ""
+msgid "draggable"
+msgstr "sürüklenebilir"
 
 #: models.py:70
-msgid "Street View control"
-msgstr ""
+msgid "keyboard shortcuts"
+msgstr "kısayol tuşları"
 
-#: models.py:78
+#: models.py:72
+msgid "Pan control"
+msgstr "Kaydırma kontrolü"
+
+#: models.py:74
+msgid "zoom control"
+msgstr "yakınlantırma kontrolü"
+
+#: models.py:77
+msgid "Street View control"
+msgstr "Street View kontrolü"
+
+#: models.py:85
 msgid "Map"
 msgstr "Harita"
 
-#: templates/cms/plugins/googlemap.html:83
+#: templates/djangocms_googlemap/googlemap.html:36
 msgid "Your address: "
 msgstr "Adresiniz:"
 
-#: templates/cms/plugins/googlemap.html:85
+#: templates/djangocms_googlemap/googlemap.html:39
 msgid "Calculate route"
 msgstr "Rota hesapla"

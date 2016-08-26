@@ -5,12 +5,12 @@
 # Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: django-cms\n"
+"Project-Id-Version: django CMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-06 14:10+0100\n"
-"PO-Revision-Date: 2014-02-06 13:31+0000\n"
-"Last-Translator: Chive <kim@smuzey.ch>\n"
-"Language-Team: Japanese (http://www.transifex.com/projects/p/django-cms/language/ja/)\n"
+"POT-Creation-Date: 2016-08-25 18:36-0400\n"
+"PO-Revision-Date: 2016-08-25 22:36+0000\n"
+"Last-Translator: Paulo Alvarado <paulo.alvarado@divio.ch>\n"
+"Language-Team: Japanese (http://www.transifex.com/divio/django-cms/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -25,130 +25,140 @@ msgstr "Googleマップ"
 msgid "Advanced"
 msgstr "詳細設定"
 
-#: forms.py:25
+#: forms.py:32
 msgid "Must be a positive integer followed by “px” or “%”."
 msgstr "正の整数の後に “px” または “%” を続ける形式でなければなりません。"
 
-#: forms.py:28
+#: forms.py:35
 msgid "Must be a positive integer followed by “px”."
 msgstr "正の整数の後に “px” を続ける形式でなければなりません。"
 
-#: models.py:13
+#: models.py:16
 msgid "map title"
 msgstr "地図タイトル"
 
-#: models.py:16
+#: models.py:19
 msgid "address"
 msgstr "住所"
 
-#: models.py:17
+#: models.py:20
 msgid "zip code"
 msgstr "郵便番号"
 
-#: models.py:18
+#: models.py:21
 msgid "city"
 msgstr "都市"
 
-#: models.py:21
+#: models.py:24
 msgid "additional content"
 msgstr "追加のコンテンツ"
 
-#: models.py:22
+#: models.py:25
 msgid "Displayed under address in the bubble."
 msgstr "バブルのアドレスの下に表示されます。"
 
-#: models.py:26
+#: models.py:27
+msgid "custom map style"
+msgstr ""
+
+#: models.py:28
+msgid ""
+"Provide a valid JSON configuration (escaped). See "
+"developers.google.com/maps/documentation/javascript/styling"
+msgstr ""
+
+#: models.py:33
 msgid "zoom level"
 msgstr "ズームレベル"
 
-#: models.py:29
+#: models.py:36
 msgid "latitude"
 msgstr "緯度"
 
-#: models.py:30
+#: models.py:37
 msgid "Use latitude & longitude to fine tune the map position."
 msgstr "マップの位置を細かく指定するには、緯度と経度を使ってください。"
 
-#: models.py:33
+#: models.py:40
 msgid "longitude"
 msgstr "経度"
 
-#: models.py:36
-msgid "route planer title"
-msgstr "経路検索のタイトル"
+#: models.py:43
+msgid "route planner title"
+msgstr ""
 
-#: models.py:37
+#: models.py:44
 msgid "Calculate your fastest way to here"
 msgstr "ここへの最短経路を計算します"
 
-#: models.py:39
-msgid "route planer"
-msgstr "経路検索"
+#: models.py:46
+msgid "route planner"
+msgstr ""
 
-#: models.py:42
+#: models.py:49
 msgid "width"
 msgstr "幅"
 
-#: models.py:43
+#: models.py:50
 msgid "Plugin width (in pixels or percent)."
 msgstr "プラグインの幅 (ピクセルまたはパーセント指定) です。"
 
-#: models.py:46
+#: models.py:53
 msgid "height"
 msgstr "高さ"
 
-#: models.py:47
+#: models.py:54
 msgid "Plugin height (in pixels)."
 msgstr "プラグインの高さ (ピクセル) です。"
 
-#: models.py:50
+#: models.py:57
 msgid "info window"
-msgstr ""
-
-#: models.py:51
-msgid "Show textbox over marker"
-msgstr ""
-
-#: models.py:54
-msgid "scrollwheel"
-msgstr ""
-
-#: models.py:55
-msgid "Enable scrollwheel zooming on the map"
-msgstr ""
+msgstr "情報表示"
 
 #: models.py:58
-msgid "double click zoom"
-msgstr ""
+msgid "Show textbox over marker"
+msgstr "情報をマーカー上に表示する。"
 
-#: models.py:60
-msgid "draggable"
-msgstr ""
+#: models.py:61
+msgid "scrollwheel"
+msgstr "スクロールホイール"
 
-#: models.py:63
-msgid "keyboard shortcuts"
-msgstr ""
+#: models.py:62
+msgid "Enable scrollwheel zooming on the map"
+msgstr "スクロールホイールでスーム可能にする。"
 
 #: models.py:65
-msgid "Pan control"
-msgstr ""
+msgid "double click zoom"
+msgstr "ダブルクリックでズーム"
 
 #: models.py:67
-msgid "zoom control"
-msgstr ""
+msgid "draggable"
+msgstr "ドラッグ可能"
 
 #: models.py:70
-msgid "Street View control"
-msgstr ""
+msgid "keyboard shortcuts"
+msgstr "キーボード・ショートカット"
 
-#: models.py:78
+#: models.py:72
+msgid "Pan control"
+msgstr "パン・コントロール"
+
+#: models.py:74
+msgid "zoom control"
+msgstr "ズーム・コントロール"
+
+#: models.py:77
+msgid "Street View control"
+msgstr "ストリートビューコントロール"
+
+#: models.py:85
 msgid "Map"
 msgstr "地図"
 
-#: templates/cms/plugins/googlemap.html:83
+#: templates/djangocms_googlemap/googlemap.html:36
 msgid "Your address: "
 msgstr "あなたの住所"
 
-#: templates/cms/plugins/googlemap.html:85
+#: templates/djangocms_googlemap/googlemap.html:39
 msgid "Calculate route"
 msgstr "経路を検索"

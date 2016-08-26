@@ -3,14 +3,16 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Guilherme Vierno <guilhermevierno@gmail.com>, 2015
+# Raphael Porto de Freitas <raphaelpor@gmail.com>, 2015
 msgid ""
 msgstr ""
-"Project-Id-Version: django-cms\n"
+"Project-Id-Version: django CMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-06 14:10+0100\n"
-"PO-Revision-Date: 2014-02-06 13:31+0000\n"
-"Last-Translator: Chive <kim@smuzey.ch>\n"
-"Language-Team: Portuguese (Brazil) (http://www.transifex.com/projects/p/django-cms/language/pt_BR/)\n"
+"POT-Creation-Date: 2016-08-25 18:36-0400\n"
+"PO-Revision-Date: 2016-08-25 22:36+0000\n"
+"Last-Translator: Paulo Alvarado <paulo.alvarado@divio.ch>\n"
+"Language-Team: Portuguese (Brazil) (http://www.transifex.com/divio/django-cms/language/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -25,130 +27,140 @@ msgstr "Mapa do Google"
 msgid "Advanced"
 msgstr "Avançado"
 
-#: forms.py:25
+#: forms.py:32
 msgid "Must be a positive integer followed by “px” or “%”."
 msgstr "Deve ser número inteiro positivo seguido de “px” ou “%”."
 
-#: forms.py:28
+#: forms.py:35
 msgid "Must be a positive integer followed by “px”."
 msgstr "Deve ser número inteiro seguido de “px”."
 
-#: models.py:13
+#: models.py:16
 msgid "map title"
 msgstr "título do mapa"
 
-#: models.py:16
+#: models.py:19
 msgid "address"
 msgstr "endereço"
 
-#: models.py:17
+#: models.py:20
 msgid "zip code"
 msgstr "CEP"
 
-#: models.py:18
+#: models.py:21
 msgid "city"
 msgstr "cidade"
 
-#: models.py:21
+#: models.py:24
 msgid "additional content"
 msgstr "conteúdo adicional"
 
-#: models.py:22
+#: models.py:25
 msgid "Displayed under address in the bubble."
 msgstr "Exibir no enderço do bubble."
 
-#: models.py:26
+#: models.py:27
+msgid "custom map style"
+msgstr ""
+
+#: models.py:28
+msgid ""
+"Provide a valid JSON configuration (escaped). See "
+"developers.google.com/maps/documentation/javascript/styling"
+msgstr ""
+
+#: models.py:33
 msgid "zoom level"
 msgstr "grau de aproximação"
 
-#: models.py:29
+#: models.py:36
 msgid "latitude"
 msgstr "latitude"
 
-#: models.py:30
+#: models.py:37
 msgid "Use latitude & longitude to fine tune the map position."
 msgstr "Use latitude e longitude para ajustar precisamente sua posição no mapa."
 
-#: models.py:33
+#: models.py:40
 msgid "longitude"
 msgstr "longitude"
 
-#: models.py:36
-msgid "route planer title"
-msgstr "título do planejamento da rota"
+#: models.py:43
+msgid "route planner title"
+msgstr ""
 
-#: models.py:37
+#: models.py:44
 msgid "Calculate your fastest way to here"
 msgstr "Calcular seu caminho mais rápido para cá"
 
-#: models.py:39
-msgid "route planer"
-msgstr "planejamento de rota"
+#: models.py:46
+msgid "route planner"
+msgstr ""
 
-#: models.py:42
+#: models.py:49
 msgid "width"
 msgstr "largura"
 
-#: models.py:43
+#: models.py:50
 msgid "Plugin width (in pixels or percent)."
 msgstr "Largura do plugin (em pixels ou porcentagem)."
 
-#: models.py:46
+#: models.py:53
 msgid "height"
 msgstr "altura"
 
-#: models.py:47
+#: models.py:54
 msgid "Plugin height (in pixels)."
 msgstr "Altura do plugin (em pixels ou porcentagem)."
 
-#: models.py:50
+#: models.py:57
 msgid "info window"
-msgstr ""
-
-#: models.py:51
-msgid "Show textbox over marker"
-msgstr ""
-
-#: models.py:54
-msgid "scrollwheel"
-msgstr ""
-
-#: models.py:55
-msgid "Enable scrollwheel zooming on the map"
-msgstr ""
+msgstr "janela de informação"
 
 #: models.py:58
-msgid "double click zoom"
-msgstr ""
+msgid "Show textbox over marker"
+msgstr "Mostra box de texto acima do marcador"
 
-#: models.py:60
-msgid "draggable"
-msgstr ""
+#: models.py:61
+msgid "scrollwheel"
+msgstr "botão de rolagem"
 
-#: models.py:63
-msgid "keyboard shortcuts"
-msgstr ""
+#: models.py:62
+msgid "Enable scrollwheel zooming on the map"
+msgstr "Habilitar zoom no mapa, com scroll"
 
 #: models.py:65
-msgid "Pan control"
-msgstr ""
+msgid "double click zoom"
+msgstr "clique-duplo para zoom"
 
 #: models.py:67
-msgid "zoom control"
-msgstr ""
+msgid "draggable"
+msgstr "arrastável"
 
 #: models.py:70
-msgid "Street View control"
-msgstr ""
+msgid "keyboard shortcuts"
+msgstr "atalhos de teclado"
 
-#: models.py:78
+#: models.py:72
+msgid "Pan control"
+msgstr "Controle direcional"
+
+#: models.py:74
+msgid "zoom control"
+msgstr "controle de zoom"
+
+#: models.py:77
+msgid "Street View control"
+msgstr "controle do Street View"
+
+#: models.py:85
 msgid "Map"
 msgstr "Mapa"
 
-#: templates/cms/plugins/googlemap.html:83
+#: templates/djangocms_googlemap/googlemap.html:36
 msgid "Your address: "
 msgstr "Seu endereço: "
 
-#: templates/cms/plugins/googlemap.html:85
+#: templates/djangocms_googlemap/googlemap.html:39
 msgid "Calculate route"
 msgstr "Calcular rota"
