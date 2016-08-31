@@ -6,6 +6,7 @@ CHANGELOG
 ------------------
 
 * Added missing Django migration
+* Added native Aldryn support
 
 
 0.5.1 (2016-06-23)
