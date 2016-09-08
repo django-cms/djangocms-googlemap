@@ -2,7 +2,7 @@ CHANGELOG
 =========
 
 
-0.5.2 (UNRELEASED)
+0.5.2 (2016-09-08)
 ------------------
 
 * Added missing Django migration
