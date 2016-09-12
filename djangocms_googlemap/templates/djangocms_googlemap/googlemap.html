@@ -44,5 +44,5 @@
     {% endif %}
 </div>
 
-{% addtoblock "js" %}<script src="//maps-api-ssl.google.com/maps/api/js?v=3"></script>{% endaddtoblock %}
+{% addtoblock "js" %}<script src="https://maps.googleapis.com/maps/api/js?key={{ google_api_key }}"></script>{% endaddtoblock %}
 {% addtoblock "js" %}<script src="{% static 'djangocms_googlemap/js/djangocms.googlemaps.js' %}"></script>{% endaddtoblock %}
