@@ -1,0 +1,10 @@
+<div class="djangocms-googlemap-marker"
+     data-id="{{ instance.pk }}"
+     data-title="{{ instance.get_title }}"
+     data-info_content="{{ instance.content }}"
+     data-address="{{ instance.address }}, {{ instance.zipcode }} {{ instance.city }}"
+     data-marker_icon="{% if instance.marker_icon %}{{ instance.marker_icon.file.url }}{% endif %}"
+     data-show_infowindow="{{ instance.info_window|lower }}"
+     data-lat="{% if instance.lat %}{{ instance.lat }}{% endif %}"
+     data-lng="{% if instance.lng %}{{ instance.lng }}{% endif %}"
+></div>
