@@ -1,8 +1,8 @@
-*.log
-*.pot
 *.pyc
-*.idea
-local_settings.py
-build
-dist
-djangocms_googlemap.egg-info
+*.egg-info
+.DS_Store
+.idea/
+.tox/
+.eggs/
+dist/
+build/
