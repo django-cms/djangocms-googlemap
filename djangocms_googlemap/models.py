@@ -238,16 +238,14 @@ class GoogleMapMarker(CMSPlugin):
         return str(self.pk)
 
     def get_short_description(self):
-        display = ''
+        display = []
         if self.title:
-            display = '{0}, '.format(self.title)
+            display.append(self.title)
         if self.address:
-            display += '{0}, '.format(self.address)
+            display.append(self.address)
         if self.lat and self.lng:
-            display += '{0} / {1} '.format(self.lat, self.lng)
-        # remove trailing comma if lat or lng are not provided
-        display = display.rstrip(', ')
-        return display
+            display.append('{0} / {1} '.format(self.lat, self.lng))
+        return ', '.join(display)
 
 
 @python_2_unicode_compatible
