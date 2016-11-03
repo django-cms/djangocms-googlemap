@@ -245,6 +245,8 @@ class GoogleMapMarker(CMSPlugin):
             display += '{0}, '.format(self.address)
         if self.lat and self.lng:
             display += '{0} / {1} '.format(self.lat, self.lng)
+        # remove trailing comma if lat or lng are not provided
+        display = display.rstrip(', ')
         return display
 
 
