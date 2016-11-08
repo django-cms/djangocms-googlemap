@@ -17,6 +17,7 @@ Changelog
     * Migrated data to separated nested plugins ``Marker`` and ``Route``
 * Cleaned up file structure
 * Updated ``README.txt``
+* Updated translations
 
 
 0.5.2 (2016-09-08)
