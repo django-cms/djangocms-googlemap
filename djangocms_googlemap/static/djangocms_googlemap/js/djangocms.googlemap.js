@@ -54,7 +54,11 @@
                 draggable: getAttr(container, 'draggable'),
                 keyboardShortcuts: getAttr(container, 'keyboard-shortcuts'),
                 scrollwheel: getAttr(container, 'scrollwheel'),
-                mapTypeId: google.maps.MapTypeId[getAttr(container, 'map-type-control')]
+                mapTypeId: google.maps.MapTypeId[getAttr(container, 'map-type-control')],
+                center: {
+                    lat: parseFloat(getAttr(container, 'lat')) || 0,
+                    lng: parseFloat(getAttr(container, 'lng')) || 0
+                }
             };
             var mapContainer = container.getElementsByClassName('js-djangocms-googlemap-container');
             var markers = container.getElementsByClassName('js-djangocms-googlemap-marker');
@@ -66,10 +70,6 @@
 
             // init the map
             this.map = new google.maps.Map(mapContainer[0], this.settings);
-            this.map.setCenter(new google.maps.LatLng(
-                parseFloat(getAttr(container, 'lat')) || 0,
-                parseFloat(getAttr(container, 'lng')) || 0
-            ));
 
             // the markers and routes need to be loaded after the map has been
             // initialised as we need to access ``this.map``
@@ -79,9 +79,6 @@
             if (routes.length) {
                 this.addRoutes(routes);
             }
-
-            // update map
-            this.update();
         }
 
         // attach methods
