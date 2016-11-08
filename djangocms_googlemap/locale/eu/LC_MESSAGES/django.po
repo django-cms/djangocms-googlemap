@@ -1,165 +1,256 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
-# Translators:
-# Ales Zabala Alava <shagi@gisa-elkartea.org>, 2014
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: django CMS\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-25 18:36-0400\n"
-"PO-Revision-Date: 2016-08-25 22:36+0000\n"
-"Last-Translator: Paulo Alvarado <paulo.alvarado@divio.ch>\n"
-"Language-Team: Basque (http://www.transifex.com/divio/django-cms/language/eu/)\n"
+"POT-Creation-Date: 2016-11-03 17:58+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Angelo Dini <finalangeljp@hotmail.com>, 2016\n"
+"Language-Team: Basque (https://www.transifex.com/divio/teams/58664/eu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: eu\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: cms_plugins.py:12
+#: cms_plugins.py:20 cms_plugins.py:67 cms_plugins.py:95
 msgid "Google Map"
 msgstr "Google Map"
 
-#: cms_plugins.py:21
-msgid "Advanced"
-msgstr "Aurreratua"
-
-#: forms.py:32
-msgid "Must be a positive integer followed by “px” or “%”."
-msgstr "Zenbaki positibo bat izan behar du pixeletan edo portzentailetan."
-
-#: forms.py:35
-msgid "Must be a positive integer followed by “px”."
-msgstr "Zenbaki positibo bat izan behar du pixeletan."
-
-#: models.py:16
-msgid "map title"
-msgstr "maparen izenburua"
-
-#: models.py:19
-msgid "address"
-msgstr "helbidea"
-
-#: models.py:20
-msgid "zip code"
-msgstr "posta-kodea"
-
-#: models.py:21
-msgid "city"
-msgstr "hiria"
-
-#: models.py:24
-msgid "additional content"
-msgstr "eduki gehigarria"
-
-#: models.py:25
-msgid "Displayed under address in the bubble."
-msgstr "Burbuilan helbidearen azpian agertzen da."
-
-#: models.py:27
-msgid "custom map style"
+#: cms_plugins.py:32 cms_plugins.py:106
+msgid "Advanced settings"
 msgstr ""
 
-#: models.py:28
-msgid ""
-"Provide a valid JSON configuration (escaped). See "
-"developers.google.com/maps/documentation/javascript/styling"
+#: cms_plugins.py:40
+msgid "Control settings"
+msgstr ""
+
+#: cms_plugins.py:66
+msgid "Marker"
+msgstr ""
+
+#: cms_plugins.py:79
+msgid "Info window"
+msgstr ""
+
+#: cms_plugins.py:94
+msgid "Route"
 msgstr ""
 
 #: models.py:33
-msgid "zoom level"
-msgstr "zoom maila"
-
-#: models.py:36
-msgid "latitude"
-msgstr "latitudea"
-
-#: models.py:37
-msgid "Use latitude & longitude to fine tune the map position."
-msgstr "Latitude eta longitudea erabili mapan kokapen fintzeko."
-
-#: models.py:40
-msgid "longitude"
-msgstr "longitudea"
-
-#: models.py:43
-msgid "route planner title"
-msgstr ""
-
-#: models.py:44
-msgid "Calculate your fastest way to here"
-msgstr "Hona heltzeko bide azkarrena kalkulatu"
-
-#: models.py:46
-msgid "route planner"
+msgid "Default"
 msgstr ""
 
 #: models.py:49
-msgid "width"
-msgstr "zabalera"
+msgid "Template"
+msgstr ""
 
-#: models.py:50
-msgid "Plugin width (in pixels or percent)."
-msgstr "Pluginaren zabalera (pixeletan edo portzentailetan)."
+#: models.py:55
+msgid "Map title"
+msgstr ""
 
-#: models.py:53
-msgid "height"
-msgstr "altuera"
+#: models.py:60
+msgid "Width"
+msgstr ""
 
-#: models.py:54
-msgid "Plugin height (in pixels)."
-msgstr "Pluginaren altuera (pixeletan)."
+#: models.py:63
+msgid ""
+"Width of the map, including the CSS length units (e.g. \"100%\", \"400px\" "
+"or \"400rem\")."
+msgstr ""
 
-#: models.py:57
-msgid "info window"
-msgstr "informazio leihoa"
+#: models.py:66
+msgid "Height"
+msgstr ""
 
-#: models.py:58
-msgid "Show textbox over marker"
-msgstr "Markaren gainean testu kutxa ikusi"
-
-#: models.py:61
-msgid "scrollwheel"
-msgstr "sagu gurpila"
-
-#: models.py:62
-msgid "Enable scrollwheel zooming on the map"
-msgstr "Gaitu saguaren gurpilarekin zoom egitea"
-
-#: models.py:65
-msgid "double click zoom"
-msgstr "klik bikoitzeko zooma"
-
-#: models.py:67
-msgid "draggable"
-msgstr "arrastagarria"
-
-#: models.py:70
-msgid "keyboard shortcuts"
-msgstr "teklatuko lasterbideak"
+#: models.py:69
+msgid ""
+"Height of the map, including the CSS length units (e.g. \"400px\" or "
+"\"400rem\")."
+msgstr ""
 
 #: models.py:72
-msgid "Pan control"
-msgstr "Panoramika kontrola"
+msgid "Map styling"
+msgstr ""
 
 #: models.py:74
-msgid "zoom control"
-msgstr "zoom kontrola"
+msgid ""
+"Provide a valid (escaped) JSON configuration. See "
+"http://developers.google.com/maps/documentation/javascript/styling"
+msgstr ""
 
-#: models.py:77
-msgid "Street View control"
-msgstr "Kale Ikuspegiaren kontrola"
+#: models.py:78 models.py:210
+msgid "Latitude (lat)"
+msgstr ""
 
-#: models.py:85
-msgid "Map"
-msgstr "Mapa"
+#: models.py:81
+msgid "Default Geographical latitude in degrees (e.g. \"46.947973\")."
+msgstr ""
 
-#: templates/djangocms_googlemap/googlemap.html:36
-msgid "Your address: "
-msgstr "Zure helbidea: "
+#: models.py:84 models.py:218
+msgid "Longitude (lng)"
+msgstr ""
 
-#: templates/djangocms_googlemap/googlemap.html:39
-msgid "Calculate route"
-msgstr "Ibilbidea kalkulatu"
+#: models.py:87
+msgid "Default Geographical longitude in degrees (e.g. \"7.447446\")."
+msgstr ""
+
+#: models.py:90
+msgid "Zoom level"
+msgstr ""
+
+#: models.py:97
+msgid "Map type"
+msgstr ""
+
+#: models.py:103
+msgid "Enable zooming"
+msgstr ""
+
+#: models.py:105
+msgid "Enabling zooming allows the user to view the map at different scales."
+msgstr ""
+
+#: models.py:108
+msgid "Enable Street View"
+msgstr ""
+
+#: models.py:110
+msgid "Street View allows the user to see street-level imagery."
+msgstr ""
+
+#: models.py:113
+msgid "Enable rotation"
+msgstr ""
+
+#: models.py:115
+msgid "Allows the user to change the orientation of the map."
+msgstr ""
+
+#: models.py:118
+msgid "Enable map scale"
+msgstr ""
+
+#: models.py:120
+msgid "Displays a linear distance scale on the map."
+msgstr ""
+
+#: models.py:123
+msgid "Enable fullscreen mode"
+msgstr ""
+
+#: models.py:125
+msgid "Allows the user to select a fullscreen view of the map."
+msgstr ""
+
+#: models.py:128
+msgid "Enable cursor key panning"
+msgstr ""
+
+#: models.py:130
+msgid ""
+"Allows the user to move the map using the cursor keys to see new areas."
+msgstr ""
+
+#: models.py:133
+msgid "Enable double-click zoom"
+msgstr ""
+
+#: models.py:135
+msgid ""
+"Allows the user to zoom and centre the map with a double-click or double-"
+"tap."
+msgstr ""
+
+#: models.py:138
+msgid "Enable dragging"
+msgstr ""
+
+#: models.py:140
+msgid "Allows the user to drag the map to see new areas."
+msgstr ""
+
+#: models.py:143
+msgid "Enable keyboard shortcuts"
+msgstr ""
+
+#: models.py:145
+msgid "Allows the user to control the map using the keyboard."
+msgstr ""
+
+#: models.py:148
+msgid "Enable scroll-wheel zooming"
+msgstr ""
+
+#: models.py:150
+msgid "Allows the user to control the zoom level with a scroll-wheel."
+msgstr ""
+
+#: models.py:180
+msgid "Width must be a positive integer followed by \"px\" or \"%\"."
+msgstr ""
+
+#: models.py:184
+msgid "Height must be a positive integer followed by \"px\"."
+msgstr ""
+
+#: models.py:190
+msgid "Map styling has to be valid JSON."
+msgstr ""
+
+#: models.py:199 models.py:257
+msgid "Title"
+msgstr ""
+
+#: models.py:204
+msgid "Full address"
+msgstr ""
+
+#: models.py:207
+msgid "Note: Latitude and longitude can be used to fine-tune the location."
+msgstr ""
+
+#: models.py:215
+msgid "Geographical latitude in degrees (e.g. \"46.947973\")."
+msgstr ""
+
+#: models.py:223
+msgid "Geographical longitude in degrees (e.g. \"7.447446\")."
+msgstr ""
+
+#: models.py:227
+msgid "Show window"
+msgstr ""
+
+#: models.py:229
+msgid "Display the info window when the map loads."
+msgstr ""
+
+#: models.py:232
+msgid "Info window content"
+msgstr ""
+
+#: models.py:234
+msgid "Will be displayed in the info window attached to the marker."
+msgstr ""
+
+#: models.py:262
+msgid "Starting address"
+msgstr ""
+
+#: models.py:265
+msgid "Will be determined by user's location (if possible) if left blank."
+msgstr ""
+
+#: models.py:268
+msgid "Destination address"
+msgstr ""
+
+#: models.py:272
+msgid "Travel mode"
+msgstr ""
