@@ -29,5 +29,7 @@ class Form(forms.BaseForm):
                 (item, item)
                 for item in split_and_strip(data['templates'])
             ]
+        if data['api_key']:
+            settings['DJANGOCMS_GOOGLEMAP_API_KEY'] = data['api_key']
 
         return settings
