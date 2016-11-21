@@ -3,8 +3,8 @@
 <div class="djangocms-googlemap-marker js-djangocms-googlemap-marker"
     data-title="{{ instance.title }}"
     data-address="{{ instance.address }}"
-    data-lat="{{ instance.lat|default:"false" }}"
-    data-lng="{{ instance.lng|default:"false" }}"
+    data-lat="{{ instance.lat|default:"false"|stringformat:"f" }}"
+    data-lng="{{ instance.lng|default:"false"|stringformat:"f" }}"
     data-show-content="{{ instance.show_content|lower }}"
     data-admin="{{ instance.get_edit_url }}"
     hidden

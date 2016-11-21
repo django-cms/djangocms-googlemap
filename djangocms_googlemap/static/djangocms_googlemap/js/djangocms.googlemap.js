@@ -159,10 +159,13 @@
              * @method update
              */
             update: function update() {
+                google.maps.event.addListenerOnce(this.map, 'bounds_changed',
+                    function() {
+                        if (this.map.getZoom() > this.settings.zoom) {
+                            this.map.setZoom(this.settings.zoom);
+                        }
+                    }.bind(this));
                 this.map.fitBounds(this.bounds);
-                if (this.map.getZoom() > this.settings.zoom) {
-                    this.map.setZoom(this.settings.zoom);
-                }
             },
 
             /**
