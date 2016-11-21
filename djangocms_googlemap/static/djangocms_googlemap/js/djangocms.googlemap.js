@@ -160,7 +160,7 @@
              */
             update: function update() {
                 google.maps.event.addListenerOnce(this.map, 'bounds_changed',
-                    function() {
+                    function () {
                         if (this.map.getZoom() > this.settings.zoom) {
                             this.map.setZoom(this.settings.zoom);
                         }
