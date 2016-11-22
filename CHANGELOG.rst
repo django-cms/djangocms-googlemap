@@ -10,6 +10,9 @@ Changelog
 * Changed naming of ``Aldryn`` to ``Divio Cloud``
 * Adapted testing infrastructure (tox/travis) to incorporate
   django CMS 3.4 and dropped 3.2
+* Fixed zoom level not correctly being applied
+* Fixed latitude/longitude data attribute values being incorrectly parsed for
+  locales not using a period as decimal separator (e.g. german)
 
 
 1.0.0 (2016-11-14)
