@@ -3,6 +3,14 @@ Changelog
 =========
 
 
+1.0.1 (unreleased)
+==================
+
+* Fixed zoom level not correctly being applied
+* Fixed latitude/longitude data attribute values being incorrectly parsed for
+  locales not using a period as decimal separator (e.g. german)
+
+
 1.0.0 (2016-11-14)
 ==================
 
