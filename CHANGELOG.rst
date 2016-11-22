@@ -3,7 +3,7 @@ Changelog
 =========
 
 
-1.0.1 (unreleased)
+1.0.1 (2016-11-22)
 ==================
 * Prevent changes to ``DJANGOCMS_GOOGLEMAP_XXX`` settings from requiring new
   migrations
