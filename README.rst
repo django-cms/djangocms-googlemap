@@ -8,7 +8,7 @@ django CMS Google Map
 **django CMS Google Map** is a set of plugins for `django CMS <http://django-cms.org>`_
 that allow you to implement `Google Map <https://developers.google.com/maps/>`_ into your website.
 
-This addon is compatible with `Aldryn <http://aldryn.com>`_ and is also available on the
+This addon is compatible with `Divio Cloud <http://divio.com>`_ and is also available on the
 `django CMS Marketplace <https://marketplace.django-cms.org/en/addons/browse/djangocms-googlemap/>`_
 for easy installation.
 
