@@ -115,7 +115,10 @@ class GoogleMapRoutePlugin(CMSPluginBase):
     ]
 
     def get_render_template(self, context, instance, placeholder):
-        return 'djangocms_googlemap/{}/route.html'.format(context['googlemap_template'])
+        try:
+            return 'djangocms_googlemap/{}/route.html'.format(context['googlemap_template'])
+        except KeyError, ke:
+            return 'djangocms_googlemap/{}/route.html'.format("default")
 
 
 plugin_pool.register_plugin(GoogleMapPlugin)
