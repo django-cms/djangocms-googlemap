@@ -30,8 +30,8 @@ def create_marker_and_route(apps, schema_editor):
                 target=target,
                 # custom fields
                 address=address,
-                lat=gmap.lng,
-                lng=gmap.lat,
+                lat=gmap.lat,
+                lng=gmap.lng,
                 info_content=gmap.content,
             )
 
