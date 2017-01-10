@@ -5,6 +5,7 @@ Changelog
 
 1.0.2 (2017-01-10)
 ==================
+
 * Fixed an issue where 0005 migration mismatches lat/lng values when creating
   the new nested structure from older upgrades
 * Updated translations
@@ -12,6 +13,7 @@ Changelog
 
 1.0.1 (2016-11-22)
 ==================
+
 * Prevent changes to ``DJANGOCMS_GOOGLEMAP_XXX`` settings from requiring new
   migrations
 * Changed naming of ``Aldryn`` to ``Divio Cloud``
