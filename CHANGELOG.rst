@@ -3,7 +3,7 @@ Changelog
 =========
 
 
-1.0.2 (unreleased)
+1.0.2 (2017-01-10)
 ==================
 * Fixed an issue where 0005 migration mismatches lat/lng values when creating
   the new nested structure from older upgrades
