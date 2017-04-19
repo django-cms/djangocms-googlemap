@@ -97,6 +97,7 @@
                         address: getAttr(marker, 'address'),
                         lat: getAttr(marker, 'lat'),
                         lng: getAttr(marker, 'lng'),
+                        icon: getAttr(marker, 'icon'),
                         showContent: getAttr(marker, 'show-content'),
                         content: marker.innerHTML,
                         animation: google.maps.Animation.DROP

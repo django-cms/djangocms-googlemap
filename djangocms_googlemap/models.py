@@ -16,6 +16,8 @@ from django.utils.translation import ugettext, ugettext_lazy as _
 
 from cms.models import CMSPlugin
 
+from filer.fields.image import FilerImageField
+
 
 MAP_TYPES = ['ROADMAP', 'SATELLITE', 'HYBRID', 'TERRAIN']
 MAP_TYPE_CHOICES = [(map_type, map_type) for map_type in MAP_TYPES]
@@ -221,6 +223,13 @@ class GoogleMapMarker(CMSPlugin):
         null=True,
         blank=True,
         help_text=_('Geographical longitude in degrees (e.g. "7.447446").'),
+    )
+    icon = FilerImageField(
+        verbose_name=_('Icon'),
+        blank=True,
+        null=True,
+        on_delete=models.SET_NULL,
+        help_text=_('A marker icon identifies a location on a map. By default, it uses a standard image from Google.'),
     )
     # info window settings
     show_content = models.BooleanField(

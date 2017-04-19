@@ -2,7 +2,10 @@
 # -*- coding: utf-8 -*-
 
 HELPER_SETTINGS = {
-    'INSTALLED_APPS': [],
+    'INSTALLED_APPS': [
+        'easy_thumbnails',
+        'filer',
+    ],
     'ALLOWED_HOSTS': ['localhost'],
     'CMS_LANGUAGES': {
         1: [{
