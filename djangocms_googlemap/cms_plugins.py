@@ -74,6 +74,7 @@ class GoogleMapMarkerPlugin(CMSPluginBase):
                 'title',
                 'address',
                 ('lat', 'lng',),
+                'icon',
             )
         }),
         (_('Info window'), {

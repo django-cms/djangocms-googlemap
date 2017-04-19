@@ -5,6 +5,7 @@
     data-address="{{ instance.address }}"
     data-lat="{{ instance.lat|default:"false"|stringformat:"f" }}"
     data-lng="{{ instance.lng|default:"false"|stringformat:"f" }}"
+    data-icon="{{ instance.icon.url }}"
     data-show-content="{{ instance.show_content|lower }}"
     data-admin="{{ instance.get_edit_url }}"
     hidden
@@ -17,6 +18,7 @@
     {{ instance.address }}
     {{ instance.lat }}
     {{ instance.lng }}
+    {{ instance.icon }}
     {{ instance.show_content }}
     {{ instance.info_content }}
 {% endcomment %}
