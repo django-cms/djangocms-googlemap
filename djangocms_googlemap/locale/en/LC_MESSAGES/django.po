@@ -2,263 +2,262 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-03 17:58+0100\n"
+"POT-Creation-Date: 2017-05-03 09:48+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: \n"
 
-#: cms_plugins.py:20 cms_plugins.py:67 cms_plugins.py:95
+#: cms_plugins.py:20 cms_plugins.py:67 cms_plugins.py:96
 msgid "Google Map"
-msgstr "Google Map"
+msgstr ""
 
-#: cms_plugins.py:32 cms_plugins.py:106
+#: cms_plugins.py:32 cms_plugins.py:107
 msgid "Advanced settings"
-msgstr "Advanced settings"
+msgstr ""
 
 #: cms_plugins.py:40
 msgid "Control settings"
-msgstr "Control settings"
+msgstr ""
 
 #: cms_plugins.py:66
 msgid "Marker"
-msgstr "Marker"
+msgstr ""
 
-#: cms_plugins.py:79
+#: cms_plugins.py:80
 msgid "Info window"
-msgstr "Info window"
+msgstr ""
 
-#: cms_plugins.py:94
+#: cms_plugins.py:95
 msgid "Route"
-msgstr "Route"
+msgstr ""
 
-#: models.py:33
+#: models.py:35
 msgid "Default"
-msgstr "Default"
+msgstr ""
 
-#: models.py:49
+#: models.py:51
 msgid "Template"
-msgstr "Template"
+msgstr ""
 
-#: models.py:55
+#: models.py:57
 msgid "Map title"
-msgstr "Map title"
+msgstr ""
 
-#: models.py:60
+#: models.py:62
 msgid "Width"
-msgstr "Width"
+msgstr ""
 
-#: models.py:63
+#: models.py:65
 msgid ""
 "Width of the map, including the CSS length units (e.g. \"100%\", \"400px\" "
 "or \"400rem\")."
 msgstr ""
-"Width of the map, including the CSS length units (e.g. \"100%\", \"400px\" "
-"or \"400rem\")."
 
-#: models.py:66
+#: models.py:68
 msgid "Height"
-msgstr "Height"
-
-#: models.py:69
-msgid ""
-"Height of the map, including the CSS length units (e.g. \"400px\" or "
-"\"400rem\")."
 msgstr ""
-"Height of the map, including the CSS length units (e.g. \"400px\" or "
-"\"400rem\")."
 
-#: models.py:72
-msgid "Map styling"
-msgstr "Map styling"
+#: models.py:71
+msgid ""
+"Height of the map, including the CSS length units (e.g. \"400px\" or \"400rem"
+"\")."
+msgstr ""
 
 #: models.py:74
-msgid ""
-"Provide a valid (escaped) JSON configuration. See "
-"http://developers.google.com/maps/documentation/javascript/styling"
+msgid "Map styling"
 msgstr ""
-"Provide a valid (escaped) JSON configuration. See "
-"http://developers.google.com/maps/documentation/javascript/styling"
 
-#: models.py:78 models.py:210
+#: models.py:76
+msgid ""
+"Provide a valid (escaped) JSON configuration. See http://developers.google."
+"com/maps/documentation/javascript/styling"
+msgstr ""
+
+#: models.py:80 models.py:212
 msgid "Latitude (lat)"
-msgstr "Latitude (lat)"
+msgstr ""
 
-#: models.py:81
+#: models.py:83
 msgid "Default Geographical latitude in degrees (e.g. \"46.947973\")."
-msgstr "Default Geographical latitude in degrees (e.g. \"46.947973\")."
+msgstr ""
 
-#: models.py:84 models.py:218
+#: models.py:86 models.py:220
 msgid "Longitude (lng)"
-msgstr "Longitude (lng)"
+msgstr ""
 
-#: models.py:87
+#: models.py:89
 msgid "Default Geographical longitude in degrees (e.g. \"7.447446\")."
-msgstr "Default Geographical longitude in degrees (e.g. \"7.447446\")."
+msgstr ""
 
-#: models.py:90
+#: models.py:92
 msgid "Zoom level"
-msgstr "Zoom level"
+msgstr ""
 
-#: models.py:97
+#: models.py:99
 msgid "Map type"
-msgstr "Map type"
-
-#: models.py:103
-msgid "Enable zooming"
-msgstr "Enable zooming"
+msgstr ""
 
 #: models.py:105
-msgid "Enabling zooming allows the user to view the map at different scales."
-msgstr "Enabling zooming allows the user to view the map at different scales."
+msgid "Enable zooming"
+msgstr ""
 
-#: models.py:108
-msgid "Enable Street View"
-msgstr "Enable Street View"
+#: models.py:107
+msgid "Enabling zooming allows the user to view the map at different scales."
+msgstr ""
 
 #: models.py:110
-msgid "Street View allows the user to see street-level imagery."
-msgstr "Street View allows the user to see street-level imagery."
+msgid "Enable Street View"
+msgstr ""
 
-#: models.py:113
-msgid "Enable rotation"
-msgstr "Enable rotation"
+#: models.py:112
+msgid "Street View allows the user to see street-level imagery."
+msgstr ""
 
 #: models.py:115
-msgid "Allows the user to change the orientation of the map."
-msgstr "Allows the user to change the orientation of the map."
+msgid "Enable rotation"
+msgstr ""
 
-#: models.py:118
-msgid "Enable map scale"
-msgstr "Enable map scale"
+#: models.py:117
+msgid "Allows the user to change the orientation of the map."
+msgstr ""
 
 #: models.py:120
-msgid "Displays a linear distance scale on the map."
-msgstr "Displays a linear distance scale on the map."
+msgid "Enable map scale"
+msgstr ""
 
-#: models.py:123
-msgid "Enable fullscreen mode"
-msgstr "Enable fullscreen mode"
+#: models.py:122
+msgid "Displays a linear distance scale on the map."
+msgstr ""
 
 #: models.py:125
-msgid "Allows the user to select a fullscreen view of the map."
-msgstr "Allows the user to select a fullscreen view of the map."
+msgid "Enable fullscreen mode"
+msgstr ""
 
-#: models.py:128
-msgid "Enable cursor key panning"
-msgstr "Enable cursor key panning"
+#: models.py:127
+msgid "Allows the user to select a fullscreen view of the map."
+msgstr ""
 
 #: models.py:130
-msgid ""
-"Allows the user to move the map using the cursor keys to see new areas."
+msgid "Enable cursor key panning"
 msgstr ""
-"Allows the user to move the map using the cursor keys to see new areas."
 
-#: models.py:133
-msgid "Enable double-click zoom"
-msgstr "Enable double-click zoom"
+#: models.py:132
+msgid "Allows the user to move the map using the cursor keys to see new areas."
+msgstr ""
 
 #: models.py:135
-msgid ""
-"Allows the user to zoom and centre the map with a double-click or double-"
-"tap."
+msgid "Enable double-click zoom"
 msgstr ""
-"Allows the user to zoom and centre the map with a double-click or double-"
-"tap."
 
-#: models.py:138
-msgid "Enable dragging"
-msgstr "Enable dragging"
+#: models.py:137
+msgid ""
+"Allows the user to zoom and centre the map with a double-click or double-tap."
+msgstr ""
 
 #: models.py:140
-msgid "Allows the user to drag the map to see new areas."
-msgstr "Allows the user to drag the map to see new areas."
+msgid "Enable dragging"
+msgstr ""
 
-#: models.py:143
-msgid "Enable keyboard shortcuts"
-msgstr "Enable keyboard shortcuts"
+#: models.py:142
+msgid "Allows the user to drag the map to see new areas."
+msgstr ""
 
 #: models.py:145
-msgid "Allows the user to control the map using the keyboard."
-msgstr "Allows the user to control the map using the keyboard."
+msgid "Enable keyboard shortcuts"
+msgstr ""
 
-#: models.py:148
-msgid "Enable scroll-wheel zooming"
-msgstr "Enable scroll-wheel zooming"
+#: models.py:147
+msgid "Allows the user to control the map using the keyboard."
+msgstr ""
 
 #: models.py:150
+msgid "Enable scroll-wheel zooming"
+msgstr ""
+
+#: models.py:152
 msgid "Allows the user to control the zoom level with a scroll-wheel."
-msgstr "Allows the user to control the zoom level with a scroll-wheel."
+msgstr ""
 
-#: models.py:180
+#: models.py:182
 msgid "Width must be a positive integer followed by \"px\" or \"%\"."
-msgstr "Width must be a positive integer followed by \"px\" or \"%\"."
+msgstr ""
 
-#: models.py:184
+#: models.py:186
 msgid "Height must be a positive integer followed by \"px\"."
-msgstr "Height must be a positive integer followed by \"px\"."
+msgstr ""
 
-#: models.py:190
+#: models.py:192
 msgid "Map styling has to be valid JSON."
-msgstr "Map styling has to be valid JSON."
+msgstr ""
 
-#: models.py:199 models.py:257
+#: models.py:201 models.py:267
 msgid "Title"
-msgstr "Title"
+msgstr ""
 
-#: models.py:204
+#: models.py:206
 msgid "Full address"
-msgstr "Full address"
+msgstr ""
 
-#: models.py:207
+#: models.py:209
 msgid "Note: Latitude and longitude can be used to fine-tune the location."
-msgstr "Note: Latitude and longitude can be used to fine-tune the location."
+msgstr ""
 
-#: models.py:215
+#: models.py:217
 msgid "Geographical latitude in degrees (e.g. \"46.947973\")."
-msgstr "Geographical latitude in degrees (e.g. \"46.947973\")."
+msgstr ""
 
-#: models.py:223
+#: models.py:225
 msgid "Geographical longitude in degrees (e.g. \"7.447446\")."
-msgstr "Geographical longitude in degrees (e.g. \"7.447446\")."
+msgstr ""
 
-#: models.py:227
-msgid "Show window"
-msgstr "Show window"
-
-#: models.py:229
-msgid "Display the info window when the map loads."
-msgstr "Display the info window when the map loads."
+#: models.py:228
+msgid "Icon"
+msgstr ""
 
 #: models.py:232
+msgid ""
+"A marker icon identifies a location on a map. By default, it uses a standard "
+"image from Google."
+msgstr ""
+
+#: models.py:237
+msgid "Show window"
+msgstr ""
+
+#: models.py:239
+msgid "Display the info window when the map loads."
+msgstr ""
+
+#: models.py:242
 msgid "Info window content"
-msgstr "Info window content"
+msgstr ""
 
-#: models.py:234
+#: models.py:244
 msgid "Will be displayed in the info window attached to the marker."
-msgstr "Will be displayed in the info window attached to the marker."
-
-#: models.py:262
-msgid "Starting address"
-msgstr "Starting address"
-
-#: models.py:265
-msgid "Will be determined by user's location (if possible) if left blank."
-msgstr "Will be determined by user's location (if possible) if left blank."
-
-#: models.py:268
-msgid "Destination address"
-msgstr "Destination address"
+msgstr ""
 
 #: models.py:272
+msgid "Starting address"
+msgstr ""
+
+#: models.py:275
+msgid "Will be determined by user's location (if possible) if left blank."
+msgstr ""
+
+#: models.py:278
+msgid "Destination address"
+msgstr ""
+
+#: models.py:282
 msgid "Travel mode"
-msgstr "Travel mode"
+msgstr ""
