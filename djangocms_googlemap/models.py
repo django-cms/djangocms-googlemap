@@ -229,7 +229,8 @@ class GoogleMapMarker(CMSPlugin):
         blank=True,
         null=True,
         on_delete=models.SET_NULL,
-        help_text=_('A marker icon identifies a location on a map. By default, it uses a standard image from Google.'),
+        help_text=_('A marker icon identifies a location on a map. '
+                    'By default, it uses a standard image from Google.'),
     )
     # info window settings
     show_content = models.BooleanField(
