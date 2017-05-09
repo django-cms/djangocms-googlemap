@@ -7,6 +7,7 @@ Changelog
 ==================
 
 * Added support for customize marker icon
+* Updated translations
 
 
 1.0.2 (2017-01-10)
