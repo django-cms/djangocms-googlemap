@@ -3,7 +3,7 @@ Changelog
 =========
 
 
-1.1.0 (unreleased)
+1.1.0 (2017-05-09)
 ==================
 
 * Added support for customize marker icon
