@@ -2,6 +2,12 @@
 Changelog
 =========
 
+1.1.1 (unreleased)
+==================
+
+* Refactored migration 0005 to avoid using the django CMS api because it can lead
+  to database errors when the models on file don't match the ones in the migration.
+
 
 1.1.0 (2017-05-09)
 ==================
