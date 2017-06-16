@@ -12,9 +12,9 @@ class Form(forms.BaseForm):
         required=False,
     )
     api_key = forms.CharField(
-        'You need to provide a valid Google Maps API key '
+        'Google Maps API Key: Warning! This field is deprecated. Please leave it blank and set an environment variable called DJANGOCMS_GOOGLEMAP_API_KEY instead.'
         'https://developers.google.com/maps/documentation/javascript/get-api-key',
-        required=True,
+        required=False,
     )
 
     def clean(self):
@@ -24,12 +24,18 @@ class Form(forms.BaseForm):
         return data
 
     def to_settings(self, data, settings):
+        from aldryn_addons.utils import djsenv as env
         if data['templates']:
             settings['DJANGOCMS_GOOGLEMAP_TEMPLATES'] = [
                 (item, item)
                 for item in split_and_strip(data['templates'])
             ]
-        if data['api_key']:
-            settings['DJANGOCMS_GOOGLEMAP_API_KEY'] = data['api_key']
-
+        # We prefer the environment variables. But fallback to the form field.
+        settings['DJANGOCMS_GOOGLEMAP_API_KEY'] = env(
+            'DJANGOCMS_GOOGLEMAP_API_KEY',
+            env(
+                'GOOGLEMAP_API_KEY',
+                data['api_key'],
+            )
+        )
         return settings
