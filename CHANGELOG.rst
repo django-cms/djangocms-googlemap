@@ -2,11 +2,12 @@
 Changelog
 =========
 
-1.1.1 (unreleased)
+1.1.1 (2017-06-16)
 ==================
 
 * Refactored migration 0005 to avoid using the django CMS api because it can lead
   to database errors when the models on file don't match the ones in the migration.
+* Moved Google Apps API Key to an environment variable on Divio Cloud
 
 
 1.1.0 (2017-05-09)
