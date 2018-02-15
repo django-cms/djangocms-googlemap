@@ -7,7 +7,9 @@
     data-lng="{{ instance.lng|default:"false"|stringformat:"f" }}"
     data-icon="{{ instance.icon.url }}"
     data-show-content="{{ instance.show_content|lower }}"
+    {% if request.toolbar and request.toolbar.edit_mode_active %}
     data-admin="{{ instance.get_edit_url }}"
+    {% endif %}
     hidden
 >
     {{ instance.info_content|safe }}
