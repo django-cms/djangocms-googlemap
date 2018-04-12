@@ -167,6 +167,12 @@
                         }
                     }.bind(this));
                 this.map.fitBounds(this.bounds);
+
+                var _map = this.map;
+                var _zoom = this.settings.zoom;
+                google.maps.event.addListenerOnce(_map, "idle", function() {
+                    _map.setZoom(_zoom);
+                });
             },
 
             /**
