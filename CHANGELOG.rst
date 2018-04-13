@@ -2,6 +2,12 @@
 Changelog
 =========
 
+1.1.2 (unreleased)
+==================
+
+* Fixed an issue with map not always setting correct zoom level
+* Removed admin url data attribute from the map marker if cms isn't in edit mode
+
 1.1.1 (2017-06-16)
 ==================
 
