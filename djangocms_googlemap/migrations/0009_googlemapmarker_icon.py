@@ -12,7 +12,6 @@ class Migration(migrations.Migration):
 
     dependencies = [
         migrations.swappable_dependency(settings.FILER_IMAGE_MODEL),
-        ('filer', '0007_auto_20161016_1055'),
         ('djangocms_googlemap', '0008_removed_null_fields'),
     ]
 
