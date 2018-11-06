@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
-from django.db import models, migrations
+import django.db.models.deletion
+from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
@@ -14,7 +15,7 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='GoogleMap',
             fields=[
-                ('cmsplugin_ptr', models.OneToOneField(serialize=False, parent_link=True, auto_created=True, to='cms.CMSPlugin', primary_key=True)),
+                ('cmsplugin_ptr', models.OneToOneField(serialize=False, parent_link=True, auto_created=True, to='cms.CMSPlugin', primary_key=True, on_delete=django.db.models.deletion.CASCADE)),
                 ('title', models.CharField(verbose_name='map title', blank=True, null=True, max_length=100)),
                 ('address', models.CharField(verbose_name='address', max_length=150)),
                 ('zipcode', models.CharField(verbose_name='zip code', max_length=30)),

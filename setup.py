@@ -4,9 +4,8 @@ from setuptools import find_packages, setup
 
 from djangocms_googlemap import __version__
 
-
 REQUIREMENTS = [
-    'django-cms>=3.3.0',
+    'django-cms>=3.4.5',
     'django-filer'
 ]
 
@@ -24,6 +23,7 @@ CLASSIFIERS = [
     'Programming Language :: Python :: 3',
     'Programming Language :: Python :: 3.4',
     'Programming Language :: Python :: 3.5',
+    'Programming Language :: Python :: 3.6',
     'Topic :: Internet :: WWW/HTTP',
     'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
     'Topic :: Software Development :: Libraries :: Application Frameworks',
@@ -38,7 +38,7 @@ setup(
     author_email='info@divio.com',
     url='https://github.com/divio/djangocms-googlemap',
     license='BSD',
-    description=('Adds Google Maps plugins to django CMS.'),
+    description='Adds Google Maps plugins to django CMS.',
     long_description=open('README.rst').read(),
     packages=find_packages(),
     include_package_data=True,

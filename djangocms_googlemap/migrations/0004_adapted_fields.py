@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
+import django.db.models.deletion
 from django.db import migrations, models
+
 from djangocms_googlemap.models import get_templates
 
 
@@ -40,7 +42,7 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='googlemap',
             name='cmsplugin_ptr',
-            field=models.OneToOneField(parent_link=True, related_name='djangocms_googlemap_googlemap', primary_key=True, serialize=False, to='cms.CMSPlugin'),
+            field=models.OneToOneField(parent_link=True, related_name='djangocms_googlemap_googlemap', primary_key=True, serialize=False, to='cms.CMSPlugin', on_delete=django.db.models.deletion.CASCADE),
         ),
         migrations.AlterField(
             model_name='googlemap',
@@ -150,7 +152,7 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='GoogleMapMarker',
             fields=[
-                ('cmsplugin_ptr', models.OneToOneField(parent_link=True, related_name='djangocms_googlemap_googlemapmarker', auto_created=True, primary_key=True, serialize=False, to='cms.CMSPlugin')),
+                ('cmsplugin_ptr', models.OneToOneField(parent_link=True, related_name='djangocms_googlemap_googlemapmarker', auto_created=True, primary_key=True, serialize=False, to='cms.CMSPlugin', on_delete=django.db.models.deletion.CASCADE)),
                 ('title', models.CharField(max_length=255, verbose_name='Title', blank=True)),
                 ('address', models.CharField(max_length=255, verbose_name='Full address', blank=True, help_text='Note: Latitude and longitude can be used to fine-tune the location.')),
                 ('lat', models.DecimalField(decimal_places=6, max_digits=10, blank=True, help_text='Geographical latitude in degrees (e.g. "46.947973").', null=True, verbose_name='Latitude (lat)')),
@@ -166,7 +168,7 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='GoogleMapRoute',
             fields=[
-                ('cmsplugin_ptr', models.OneToOneField(parent_link=True, related_name='djangocms_googlemap_googlemaproute', auto_created=True, primary_key=True, serialize=False, to='cms.CMSPlugin')),
+                ('cmsplugin_ptr', models.OneToOneField(parent_link=True, related_name='djangocms_googlemap_googlemaproute', auto_created=True, primary_key=True, serialize=False, to='cms.CMSPlugin', on_delete=django.db.models.deletion.CASCADE)),
                 ('title', models.CharField(max_length=255, verbose_name='Title', blank=True)),
                 ('origin', models.CharField(max_length=255, verbose_name='Starting address', blank=True, help_text='Will be determined by user\'s location (if possible) if left blank.')),
                 ('destination', models.CharField(max_length=255, verbose_name='Destination address')),
