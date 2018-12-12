@@ -2,6 +2,13 @@
 Changelog
 =========
 
+1.2.1 (unreleased)
+==================
+
+* Fixed test matrix
+* Exclude tests folder from release build
+
+
 1.2.0 (2018-11-07)
 ==================
 
