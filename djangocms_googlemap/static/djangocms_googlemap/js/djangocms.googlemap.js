@@ -71,14 +71,19 @@
             // init the map
             this.map = new google.maps.Map(mapContainer[0], this.settings);
 
+            var that = this;
+
             // the markers and routes need to be loaded after the map has been
-            // initialised as we need to access ``this.map``
-            if (markers.length) {
-                this.addMarkers(markers);
-            }
-            if (routes.length) {
-                this.addRoutes(routes);
-            }
+            // initialised as we need to render the markers and set the correct
+            // bounds and zoom level on the rendered map (ref #73)
+            google.maps.event.addListenerOnce(this.map, 'idle', function () {
+                if (markers.length) {
+                    that.addMarkers(markers);
+                }
+                if (routes.length) {
+                    that.addRoutes(routes);
+                }
+            });
         }
 
         // attach methods

@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
+import django.db.models.deletion
 from django.db import migrations, models
 
 
@@ -19,7 +20,7 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='googlemap',
             name='cmsplugin_ptr',
-            field=models.OneToOneField(parent_link=True, related_name='djangocms_googlemap_googlemap', auto_created=True, primary_key=True, serialize=False, to='cms.CMSPlugin'),
+            field=models.OneToOneField(parent_link=True, related_name='djangocms_googlemap_googlemap', auto_created=True, primary_key=True, serialize=False, to='cms.CMSPlugin', on_delete=django.db.models.deletion.CASCADE),
         ),
         migrations.AlterField(
             model_name='googlemap',

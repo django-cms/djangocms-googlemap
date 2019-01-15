@@ -6,7 +6,6 @@ HELPER_SETTINGS = {
         'easy_thumbnails',
         'filer',
     ],
-    'ALLOWED_HOSTS': ['localhost'],
     'CMS_LANGUAGES': {
         1: [{
             'code': 'en',
@@ -14,11 +13,14 @@ HELPER_SETTINGS = {
         }]
     },
     'LANGUAGE_CODE': 'en',
+    'ALLOWED_HOSTS': ['localhost'],
 }
+
 
 def run():
     from djangocms_helper import runner
     runner.cms('djangocms_googlemap')
+
 
 if __name__ == '__main__':
     run()

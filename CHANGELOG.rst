@@ -2,6 +2,24 @@
 Changelog
 =========
 
+1.2.1 (unreleased)
+==================
+
+* Fixed test matrix
+* Exclude tests folder from release build
+
+
+1.2.0 (2018-11-07)
+==================
+
+* Fixed an issue with map not always setting correct zoom level
+* Removed admin url data attribute from the map marker if cms isn't in edit mode
+* Added support for Django 1.11, 2.0 and 2.1
+* Removed support for Django 1.8, 1.9, 1.10
+* Adapted testing infrastructure (tox/travis) to incorporate
+  django CMS 3.5 and 4.0
+
+
 1.1.1 (2017-06-16)
 ==================
 

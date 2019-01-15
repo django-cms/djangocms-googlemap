@@ -5,25 +5,24 @@ from the google maps api.
 """
 from __future__ import unicode_literals
 
-import re
 import json
+import re
 
-from django.db import models
 from django.conf import settings
 from django.core.exceptions import ValidationError
+from django.db import models
 from django.utils.encoding import python_2_unicode_compatible
-from django.utils.translation import ugettext, ugettext_lazy as _
+from django.utils.translation import ugettext_lazy as _
 
 from cms.models import CMSPlugin
 
 from filer.fields.image import FilerImageField
 
-
 MAP_TYPES = ['ROADMAP', 'SATELLITE', 'HYBRID', 'TERRAIN']
 MAP_TYPE_CHOICES = [(map_type, map_type) for map_type in MAP_TYPES]
 TRAVEL_MODES = ['DRIVING', 'BICYCLING', 'TRANSIT', 'WALKING']
 TRAVEL_MODE_CHOICES = [(travel_mode, travel_mode) for travel_mode in TRAVEL_MODES]
-ZOOM_LEVEL_CHOICES = [(c, str(c)) for c in range(22)] # from 0 to 21
+ZOOM_LEVEL_CHOICES = [(c, str(c)) for c in range(22)]  # from 0 to 21
 
 CSS_WIDTH_RE = re.compile(r'^\d+(?:px|%)$')
 CSS_HEIGHT_RE = re.compile(r'^\d+px$')
@@ -74,7 +73,7 @@ class GoogleMap(CMSPlugin):
         verbose_name=_('Map styling'),
         blank=True,
         help_text=_('Provide a valid (escaped) JSON configuration. See '
-            'http://developers.google.com/maps/documentation/javascript/styling'),
+                    'http://developers.google.com/maps/documentation/javascript/styling'),
     )
     lat = models.FloatField(
         verbose_name=_('Latitude (lat)'),
@@ -160,6 +159,7 @@ class GoogleMap(CMSPlugin):
         CMSPlugin,
         related_name='%(app_label)s_%(class)s',
         parent_link=True,
+        on_delete=models.CASCADE,
     )
 
     def __str__(self):

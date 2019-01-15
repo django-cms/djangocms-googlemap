@@ -12,7 +12,8 @@ class Form(forms.BaseForm):
         required=False,
     )
     api_key = forms.CharField(
-        'Google Maps API Key: Warning! This field is deprecated. Please leave it blank and set an environment variable called DJANGOCMS_GOOGLEMAP_API_KEY instead.'
+        'Google Maps API Key: Warning! This field is deprecated. '
+        'Please leave it blank and set an environment variable called DJANGOCMS_GOOGLEMAP_API_KEY instead.'
         'https://developers.google.com/maps/documentation/javascript/get-api-key',
         required=False,
     )
