@@ -6,7 +6,7 @@ from djangocms_googlemap import __version__
 
 REQUIREMENTS = [
     'django-cms>=3.4.5',
-    'django-filer'
+    'django-filer>=1.3.0'
 ]
 
 
