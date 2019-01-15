@@ -33,8 +33,12 @@ Documentation
 See ``REQUIREMENTS`` in the `setup.py <https://github.com/divio/djangocms-googlemap/blob/master/setup.py>`_
 file for additional dependencies:
 
-* Python 2.7, 3.4 or higher
-* Django 1.11 or higher
+|python| |django| |djangocms|
+
+* Django Filer 1.2.4 or higher
+
+Make sure `django Filer <http://django-filer.readthedocs.io/en/latest/installation.html>`_
+is installed and configured appropriately.
 
 
 Installation
