@@ -18,6 +18,7 @@ from cms.models import CMSPlugin
 
 from filer.fields.image import FilerImageField
 
+
 MAP_TYPES = ['ROADMAP', 'SATELLITE', 'HYBRID', 'TERRAIN']
 MAP_TYPE_CHOICES = [(map_type, map_type) for map_type in MAP_TYPES]
 TRAVEL_MODES = ['DRIVING', 'BICYCLING', 'TRANSIT', 'WALKING']

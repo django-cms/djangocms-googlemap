@@ -7,6 +7,7 @@ from cms.plugin_pool import plugin_pool
 
 from . import models
 
+
 GOOGLEMAP_API_KEY = getattr(
     settings,
     'DJANGOCMS_GOOGLEMAP_API_KEY',
