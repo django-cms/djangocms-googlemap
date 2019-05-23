@@ -15,3 +15,8 @@ class GoogleMapTestCase(TestCase):
         """Google Map instance has been created"""
         google_map = GoogleMap.objects.get(title='test')
         self.assertEqual(google_map.title, 'test')
+
+    def test_google_map_instance_rendered_template(self):
+        """Google Map instance has correct template"""
+        google_map = GoogleMap.objects.get(title='test')
+        self.assertEqual(google_map.template, 'default')
