@@ -229,7 +229,7 @@ class GoogleMapMarker(CMSPlugin):
         verbose_name=_('Icon'),
         blank=True,
         null=True,
-        on_delete=models.SET_NULL,
+        on_delete=models.PROTECT,
         help_text=_('A marker icon identifies a location on a map. '
                     'By default, it uses a standard image from Google.'),
     )
