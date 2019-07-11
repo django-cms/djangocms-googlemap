@@ -25,7 +25,9 @@
     {% endfor %}
 </div>
 {% comment %}
-prevents a disaligne bug, when the map is redrawn, take from googles examples
+prevents a disaligne bug of the images in the controls,
+when the map is redrawn (trigger of the event 'cms-content-refresh'),
+taken from googles examples
 {% endcomment %}
 {% addtoblock "css" %}
     <style type="text/css">
