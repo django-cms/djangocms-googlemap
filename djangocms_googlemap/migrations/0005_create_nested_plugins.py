@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 from django.db import migrations, models
 
 
-def add_plugin(apps, plugin_type, plugin_model, language, placeholder, parent, **data):
+def add_plugin(apps, plugin_type, plugin_model, language, placeholder, parent, **data):  # pragma: no cover
     from cms.models import CMSPlugin
     from treebeard.mp_tree import MP_AddChildHandler
 
@@ -40,7 +40,7 @@ def add_plugin(apps, plugin_type, plugin_model, language, placeholder, parent, *
     return bound_plugin
 
 
-def create_marker_and_route(apps, schema_editor):
+def create_marker_and_route(apps, schema_editor):  # pragma: no cover
     Placeholder = apps.get_model('cms', 'Placeholder')
     CMSPlugin = apps.get_model('cms', 'CMSPlugin')
     GoogleMap = apps.get_model('djangocms_googlemap', 'GoogleMap')
