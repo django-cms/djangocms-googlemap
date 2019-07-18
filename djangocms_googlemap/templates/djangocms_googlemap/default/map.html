@@ -53,21 +53,25 @@ when the plugin is added to a page for the first time
 {% endcomment %}
 {% with cms_js_classes="cms-execute-js-to-render cms-trigger-event-window-load" %}
     {% addtoblock "js" %}
-        <script src="https://maps.googleapis.com/maps/api/js{% if googlemap_key %}?key={{ googlemap_key }}{% endif %}"
-            {% if request.toolbar and request.toolbar.edit_mode_active or request.toolbar and request.toolbar.edit_mode %}
-                class="{{cms_js_classes}}"
-            {% endif %}
-        async defer>
-        </script>
+        {% spaceless %}
+            <script src="https://maps.googleapis.com/maps/api/js{% if googlemap_key %}?key={{ googlemap_key }}{% endif %}"
+                {% if request.toolbar and request.toolbar.edit_mode_active or request.toolbar and request.toolbar.edit_mode %}
+                    class="{{cms_js_classes}}"
+                {% endif %}
+            async defer>
+            </script>
+        {% endspaceless %}
     {% endaddtoblock %}
 
     {% addtoblock "js" %}
-        <script src="{% static 'djangocms_googlemap/js/djangocms.googlemap.js' %}"
-            {% if request.toolbar and request.toolbar.edit_mode_active or request.toolbar and request.toolbar.edit_mode %}
-                class="{{cms_js_classes}}"
-            {% endif %}
-        async defer>
-        </script>
+        {% spaceless %}
+            <script src="{% static 'djangocms_googlemap/js/djangocms.googlemap.js' %}"
+                {% if request.toolbar and request.toolbar.edit_mode_active or request.toolbar and request.toolbar.edit_mode %}
+                    class="{{cms_js_classes}}"
+                {% endif %}
+            async defer>
+            </script>
+        {% endspaceless %}
     {% endaddtoblock %}
 {% endwith %}
 
