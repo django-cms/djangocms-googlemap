@@ -1,6 +1,8 @@
-# requirements from setup.py
-# other requirements
 djangocms-helper
 tox
 coverage
 django-mptt>=0.9.1
+isort
+flake8
+# override "pyflakes<2.1" from djangocms-helper
+pyflakes>=2.1.0

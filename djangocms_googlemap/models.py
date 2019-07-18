@@ -209,18 +209,14 @@ class GoogleMapMarker(CMSPlugin):
         blank=True,
         help_text=_('Note: Latitude and longitude can be used to fine-tune the location.'),
     )
-    lat = models.DecimalField(
+    lat = models.FloatField(
         verbose_name=_('Latitude (lat)'),
-        max_digits=10,
-        decimal_places=6,
         null=True,
         blank=True,
         help_text=_('Geographical latitude in degrees (e.g. "46.947973").'),
     )
-    lng = models.DecimalField(
+    lng = models.FloatField(
         verbose_name=_('Longitude (lng)'),
-        max_digits=10,
-        decimal_places=6,
         null=True,
         blank=True,
         help_text=_('Geographical longitude in degrees (e.g. "7.447446").'),
@@ -255,7 +251,7 @@ class GoogleMapMarker(CMSPlugin):
         if self.address:
             display.append(self.address)
         if self.lat and self.lng:
-            display.append('{0} / {1} '.format(self.lat, self.lng))
+            display.append('{0} / {1}'.format(self.lat, self.lng))
         return ', '.join(display)
 
 
@@ -295,5 +291,5 @@ class GoogleMapRoute(CMSPlugin):
             display = '{0}, '.format(self.title)
         if self.origin:
             display += 'from {0}, '.format(self.origin)
-        display += 'to {0} '.format(self.destination)
+        display += 'to {0}'.format(self.destination)
         return display
