@@ -156,7 +156,6 @@ class GoogleMapModelTestCase(TestCase):
         instance.lat = None
         self.assertEqual(instance.get_short_description(), "")
 
-
     def test_googlemap_route_instance(self):
         GoogleMapRoute.objects.create(
             title="some title",
