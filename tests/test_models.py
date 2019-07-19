@@ -75,24 +75,24 @@ class GoogleMapModelTestCase(TestCase):
         self.assertEqual(instance.lng, -73.935242)
         self.assertEqual(instance.zoom, 11)
         self.assertEqual(instance.map_type_control, "ROADMAP")
-        self.assertEqual(instance.zoom_control, False)
-        self.assertEqual(instance.street_view_control, False)
-        self.assertEqual(instance.rotate_control, False)
-        self.assertEqual(instance.scale_control, False)
-        self.assertEqual(instance.fullscreen_control, False)
-        self.assertEqual(instance.pan_control, False)
-        self.assertEqual(instance.double_click_zoom, False)
-        self.assertEqual(instance.draggable, False)
-        self.assertEqual(instance.keyboard_shortcuts, False)
-        self.assertEqual(instance.scrollwheel, False)
+        self.assertFalse(instance.zoom_control)
+        self.assertFalse(instance.street_view_control)
+        self.assertFalse(instance.rotate_control)
+        self.assertFalse(instance.scale_control)
+        self.assertFalse(instance.fullscreen_control)
+        self.assertFalse(instance.pan_control)
+        self.assertFalse(instance.double_click_zoom)
+        self.assertFalse(instance.draggable)
+        self.assertFalse(instance.keyboard_shortcuts)
+        self.assertFalse(instance.scrollwheel)
         # test methods
-        self.assertEqual(instance.__str__(), "some title")
+        self.assertEqual(str(instance), "some title")
         self.assertEqual(
             instance.get_short_description(),
             "some title, 400px x 200px",
         )
         instance.title = None
-        self.assertEqual(instance.__str__(), "1")
+        self.assertEqual(str(instance), "1")
         self.assertEqual(
             instance.get_short_description(),
             "40.73061 / -73.935242, 400px x 200px",
@@ -104,7 +104,7 @@ class GoogleMapModelTestCase(TestCase):
             "400px x 200px",
         )
         # assert validation errors
-        self.assertEqual(instance.clean(), None)
+        self.assertIsNone(instance.clean())
         with self.assertRaises(ValidationError):
             instance.width = "200test"
             instance.clean()
@@ -135,10 +135,10 @@ class GoogleMapModelTestCase(TestCase):
         self.assertEqual(instance.lat, 40.73061)
         self.assertEqual(instance.lng, -73.935242)
         self.assertEqual(instance.icon, self.icon)
-        self.assertEqual(instance.show_content, False)
+        self.assertFalse(instance.show_content)
         self.assertEqual(instance.info_content, "Some content to display")
         # test methods
-        self.assertEqual(instance.__str__(), "1")
+        self.assertEqual(str(instance), "1")
         self.assertEqual(
             instance.get_short_description(),
             "some title, Main road, New York, 40.73061 / -73.935242",
@@ -171,7 +171,7 @@ class GoogleMapModelTestCase(TestCase):
         self.assertEqual(instance.destination, "destination address")
         self.assertEqual(instance.travel_mode, "BICYCLING")
         # test methods
-        self.assertEqual(instance.__str__(), "1")
+        self.assertEqual(str(instance), "1")
         self.assertEqual(
             instance.get_short_description(),
             "some title, from starting address, to destination address",
