@@ -26,15 +26,6 @@ class GoogleMapModelTestCase(TestCase):
     def tearDown(self):
         if self.icon:
             self.icon.delete()
-            del self.icon
-            with self.assertRaises(AttributeError):
-                print(self.icon)
-        GoogleMap.objects.filter(pk=1).delete()
-        self.assertEqual(GoogleMap.objects.all().count(), 0)
-        GoogleMapMarker.objects.filter(pk=1).delete()
-        self.assertEqual(GoogleMapMarker.objects.all().count(), 0)
-        GoogleMapRoute.objects.filter(pk=1).delete()
-        self.assertEqual(GoogleMapRoute.objects.all().count(), 0)
 
     def test_settings(self):
         self.assertEqual(get_templates(), [("default", "Default")])
@@ -65,7 +56,7 @@ class GoogleMapModelTestCase(TestCase):
         )
         instance = GoogleMap.objects.all()
         self.assertEqual(instance.count(), 1)
-        instance = GoogleMap.objects.get(pk=1)
+        instance = GoogleMap.objects.first()
         self.assertEqual(instance.template, "default")
         self.assertEqual(instance.title, "some title")
         self.assertEqual(instance.width, "400px")
@@ -129,7 +120,7 @@ class GoogleMapModelTestCase(TestCase):
         )
         instance = GoogleMapMarker.objects.all()
         self.assertEqual(instance.count(), 1)
-        instance = GoogleMapMarker.objects.get(pk=1)
+        instance = GoogleMapMarker.objects.first()
         self.assertEqual(instance.title, "some title")
         self.assertEqual(instance.address, "Main road, New York")
         self.assertEqual(instance.lat, 40.73061)
@@ -165,7 +156,7 @@ class GoogleMapModelTestCase(TestCase):
         )
         instance = GoogleMapRoute.objects.all()
         self.assertEqual(instance.count(), 1)
-        instance = GoogleMapRoute.objects.get(pk=1)
+        instance = GoogleMapRoute.objects.first()
         self.assertEqual(instance.title, "some title")
         self.assertEqual(instance.origin, "starting address")
         self.assertEqual(instance.destination, "destination address")

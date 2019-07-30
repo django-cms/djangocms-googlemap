@@ -35,9 +35,6 @@ class GoogleMapPluginsTextCase(CMSTestCase):
         self.superuser.delete()
         if self.icon:
             self.icon.delete()
-            del self.icon
-            with self.assertRaises(AttributeError):
-                print(self.icon)
 
     def test_googlemap_plugin(self):
         plugin = add_plugin(
