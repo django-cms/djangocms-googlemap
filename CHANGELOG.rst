@@ -3,6 +3,14 @@ Changelog
 =========
 
 
+1.3.1 (unreleased)
+==================
+
+* Added further tests to raise coverage
+* Fixed smaller issues found during testing
+* Changed ``DecimalField`` field to ``FloatField`` for **Marker** plugin
+
+
 1.3.0 (2019-05-23)
 ==================
 
