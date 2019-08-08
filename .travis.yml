@@ -24,7 +24,6 @@ matrix:
       env: DJANGO='dj21' CMS='cms37'
     # Django 2.2
     - python: 3.6
-      dist: xenial
       env: DJANGO='dj22' CMS='cms37'
     - python: 3.7
       env: DJANGO='dj22' CMS='cms37'
