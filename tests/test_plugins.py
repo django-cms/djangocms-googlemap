@@ -9,7 +9,7 @@ from djangocms_googlemap.cms_plugins import (
 from .helpers import get_filer_image
 
 
-class GoogleMapPluginsTextCase(CMSTestCase):
+class GoogleMapPluginsTestCase(CMSTestCase):
 
     def setUp(self):
         self.language = "en"
