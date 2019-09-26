@@ -301,13 +301,28 @@
         return GoogleMapConstructor;
     })();
 
-    // make sure google maps is loaded after our dom is ready
-    window.addEventListener('load', function () {
+    function InitMap() {
         var elements = document.getElementsByClassName('js-djangocms-googlemap');
 
         elements = [].slice.call(elements);
         elements.forEach(function (element) {
-            new GoogleMap(element);
+            var container = element.querySelector('.djangocms-googlemap-container');
+            // make sure google map wasn't already initialized on that element
+            if (!container.hasChildNodes()) {
+                new GoogleMap(element);
+            }
         }, this);
+
+    }
+
+    // make sure google maps is loaded after our dom is ready
+    window.addEventListener('load', function () {
+        InitMap();
     });
+
+    if (window.CMS !== undefined) {
+        CMS.$(window).on('cms-content-refresh', function() {
+            InitMap();
+        })
+    }
 })();

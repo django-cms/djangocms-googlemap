@@ -24,9 +24,56 @@
         {% render_plugin plugin %}
     {% endfor %}
 </div>
+{% comment %}
+prevents a disaligne bug of the images in the controls,
+when the map is redrawn (trigger of the event 'cms-content-refresh'),
+taken from googles examples
+{% endcomment %}
+{% if request.toolbar and request.toolbar.edit_mode_active or request.toolbar and request.toolbar.edit_mode %}
+    {% addtoblock "css" %}
+        <style type="text/css">
+            .gm-control-active>img {
+                box-sizing: content-box;
+                left: 50%;
+                pointer-events: none;
+                position: absolute;
+                top: 50%;
+                transform: translate(-50%,-50%);
+            }
+            .gm-control-active>img:first-child {
+                z-index: 100;
+            }
+        </style>
+    {% endaddtoblock %}
+{% endif %}
 
-{% addtoblock "js" %}<script src="https://maps.googleapis.com/maps/api/js{% if googlemap_key %}?key={{ googlemap_key }}{% endif %}" async defer></script>{% endaddtoblock %}
-{% addtoblock "js" %}<script src="{% static 'djangocms_googlemap/js/djangocms.googlemap.js' %}" async defer></script>{% endaddtoblock %}
+{% comment %}
+cms_js_classes are for injecting and executing javascript code properly,
+when the plugin is added to a page for the first time
+{% endcomment %}
+{% with cms_js_classes="cms-execute-js-to-render cms-trigger-event-window-load" %}
+    {% addtoblock "js" %}
+        {% spaceless %}
+            <script src="https://maps.googleapis.com/maps/api/js{% if googlemap_key %}?key={{ googlemap_key }}{% endif %}"
+                {% if request.toolbar and request.toolbar.edit_mode_active or request.toolbar and request.toolbar.edit_mode %}
+                    class="{{cms_js_classes}}"
+                {% endif %}
+            async defer>
+            </script>
+        {% endspaceless %}
+    {% endaddtoblock %}
+
+    {% addtoblock "js" %}
+        {% spaceless %}
+            <script src="{% static 'djangocms_googlemap/js/djangocms.googlemap.js' %}"
+                {% if request.toolbar and request.toolbar.edit_mode_active or request.toolbar and request.toolbar.edit_mode %}
+                    class="{{cms_js_classes}}"
+                {% endif %}
+            async defer>
+            </script>
+        {% endspaceless %}
+    {% endaddtoblock %}
+{% endwith %}
 
 {% comment %}
     {{ googlemap_key }}

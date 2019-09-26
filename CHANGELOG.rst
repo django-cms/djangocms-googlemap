@@ -2,6 +2,11 @@
 Changelog
 =========
 
+1.3.1 (unreleased)
+==================
+
+* Add rendering on plugin first insert capability
+
 
 1.3.1 (unreleased)
 ==================
