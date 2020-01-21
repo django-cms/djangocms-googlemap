@@ -2,9 +2,11 @@
 Changelog
 =========
 
+
 1.3.1 (unreleased)
 ==================
 
+* Added support for Django 3.0
 * Add rendering on plugin first insert capability
 
 
