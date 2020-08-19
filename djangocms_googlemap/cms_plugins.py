@@ -1,6 +1,5 @@
-# -*- coding: utf-8 -*-
 from django.conf import settings
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 
 from cms.plugin_base import CMSPluginBase
 from cms.plugin_pool import plugin_pool
@@ -55,7 +54,7 @@ class GoogleMapPlugin(CMSPluginBase):
         return 'djangocms_googlemap/{}/map.html'.format(instance.template)
 
     def render(self, context, instance, placeholder):
-        context = super(GoogleMapPlugin, self).render(context, instance, placeholder)
+        context = super().render(context, instance, placeholder)
         context['googlemap_template'] = instance.template
         context['googlemap_key'] = GOOGLEMAP_API_KEY
         return context

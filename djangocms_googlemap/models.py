@@ -1,22 +1,18 @@
-# -*- coding: utf-8 -*-
 """
 Enables the user to add various google maps plugin that adds maps or images
 from the google maps api.
 """
-from __future__ import unicode_literals
-
 import json
 import re
 
 from django.conf import settings
 from django.core.exceptions import ValidationError
 from django.db import models
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 
 from cms.models import CMSPlugin
 
 from filer.fields.image import FilerImageField
-from six import python_2_unicode_compatible
 
 
 MAP_TYPES = ['ROADMAP', 'SATELLITE', 'HYBRID', 'TERRAIN']
@@ -42,7 +38,6 @@ def get_templates():
     return choices
 
 
-@python_2_unicode_compatible
 class GoogleMap(CMSPlugin):
     """
     Renders the Google Maps wrapper
@@ -193,7 +188,6 @@ class GoogleMap(CMSPlugin):
                 raise ValidationError(_('Map styling has to be valid JSON.'))
 
 
-@python_2_unicode_compatible
 class GoogleMapMarker(CMSPlugin):
     """
     Renders a marker inside the Google Maps wrapper
@@ -255,7 +249,6 @@ class GoogleMapMarker(CMSPlugin):
         return ', '.join(display)
 
 
-@python_2_unicode_compatible
 class GoogleMapRoute(CMSPlugin):
     """
     Renders a route option inside the map
