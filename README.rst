@@ -1,3 +1,4 @@
+django CMS Google Map is so amazing
 =====================
 django CMS Google Map
 =====================
