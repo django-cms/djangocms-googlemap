@@ -3,6 +3,7 @@ from django.db import migrations, models
 
 def add_plugin(apps, plugin_type, plugin_model, language, placeholder, parent, **data):  # pragma: no cover
     from cms.models import CMSPlugin
+
     from treebeard.mp_tree import MP_AddChildHandler
 
     # This is a CMSPlugin instance which represents the model's
