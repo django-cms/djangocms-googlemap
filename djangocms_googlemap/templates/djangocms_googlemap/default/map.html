@@ -1,4 +1,5 @@
 {% load i18n static sekizai_tags cms_tags %}
+{% get_current_language as LANGUAGE_CODE %}
 
 <div class="djangocms-googlemap js-djangocms-googlemap"
     data-zoom="{{ instance.zoom }}"
@@ -55,7 +56,8 @@ when the plugin is added to a page for the first time
 {% with cms_js_classes="cms-execute-js-to-render cms-trigger-event-window-load" %}
     {% addtoblock "js" %}
         {% spaceless %}
-            <script src="https://maps.googleapis.com/maps/api/js{% if googlemap_key %}?key={{ googlemap_key }}{% endif %}"
+            <script>var djangocms_googlemap = window.djangocms_googlemap || { InitMap: function(){} };</script>
+            <script src="https://maps.googleapis.com/maps/api/js?callback=djangocms_googlemap.InitMap&language={{ LANGUAGE_CODE }}{% if googlemap_key %}&key={{ googlemap_key }}{% endif %}"
                 {% if request.toolbar and request.toolbar.edit_mode_active or request.toolbar and request.toolbar.edit_mode %}
                     class="{{cms_js_classes}}"
                 {% endif %}
