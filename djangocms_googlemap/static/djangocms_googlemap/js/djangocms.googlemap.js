@@ -315,6 +315,10 @@
 
     }
 
+    // make sure callback function is updated in 'djangocms_googlemap' namespace
+    window.djangocms_googlemap = window.djangocms_googlemap || {};
+    window.djangocms_googlemap.InitMap = InitMap;
+
     // make sure google maps is loaded after our dom is ready
     window.addEventListener('load', function () {
         InitMap();
