@@ -3,6 +3,7 @@
 <div class="djangocms-googlemap js-djangocms-googlemap"
     data-zoom="{{ instance.zoom }}"
     data-style="{{ instance.style }}"
+    data-map-id="{{ instance.map_id }}"
     data-lat="{{ instance.lat|stringformat:"f" }}"
     data-lng="{{ instance.lng|stringformat:"f" }}"
     data-zoom-control="{{ instance.zoom_control|lower }}"
@@ -83,6 +84,7 @@ when the plugin is added to a page for the first time
     {{ instance.height }}
     {{ instance.zoom }}
     {{ instance.style }}
+    {{ instance.map_id }}
 
     {{ instance.map_type_control }}
     {{ instance.zoom_control }}

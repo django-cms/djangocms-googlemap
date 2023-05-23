@@ -44,6 +44,7 @@
             this.settings = {
                 zoom: parseInt(getAttr(container, 'zoom')),
                 styles: JSON.parse(getAttr(container, 'style') || false),
+                mapId: getAttr(container, 'map-id'),
                 zoomControl: getAttr(container, 'zoom-control'),
                 streetViewControl: getAttr(container, 'street-view-control'),
                 rotateControl: getAttr(container, 'rotate-control'),
