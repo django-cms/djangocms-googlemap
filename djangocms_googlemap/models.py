@@ -71,6 +71,13 @@ class GoogleMap(CMSPlugin):
         help_text=_('Provide a valid (escaped) JSON configuration. See '
                     'http://developers.google.com/maps/documentation/javascript/styling'),
     )
+    map_id = models.CharField(
+        verbose_name=_('Map ID'),
+        max_length=32,
+        blank=True,
+        help_text=_('Map ID of Cloud-based maps styling. See '
+                    'https://developers.google.com/maps/documentation/cloud-customization/overview'),
+    )
     lat = models.FloatField(
         verbose_name=_('Latitude (lat)'),
         null=True,

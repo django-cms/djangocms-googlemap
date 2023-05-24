@@ -44,6 +44,7 @@
             this.settings = {
                 zoom: parseInt(getAttr(container, 'zoom')),
                 styles: JSON.parse(getAttr(container, 'style') || false),
+                mapId: getAttr(container, 'map-id'),
                 zoomControl: getAttr(container, 'zoom-control'),
                 streetViewControl: getAttr(container, 'street-view-control'),
                 rotateControl: getAttr(container, 'rotate-control'),
@@ -314,6 +315,10 @@
         }, this);
 
     }
+
+    // make sure callback function is updated in 'djangocms_googlemap' namespace
+    window.djangocms_googlemap = window.djangocms_googlemap || {};
+    window.djangocms_googlemap.InitMap = InitMap;
 
     // make sure google maps is loaded after our dom is ready
     window.addEventListener('load', function () {
