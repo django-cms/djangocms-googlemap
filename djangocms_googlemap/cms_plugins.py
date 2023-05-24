@@ -33,7 +33,8 @@ class GoogleMapPlugin(CMSPluginBase):
             'fields': (
                 'template',
                 ('lat', 'lng',),
-                'map_id', 'style',
+                'map_id', 
+                'style',
             )
         }),
         (_('Control settings'), {
