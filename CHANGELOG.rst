@@ -3,7 +3,7 @@ Changelog
 =========
 
 
-2.x.x (unreleased)
+2.1.0 (2022-05-24)
 ==================
 
 * Added support for Cloud-based maps styling via ``Map ID``
