@@ -58,7 +58,7 @@ Configuration
 -------------
 
 django CMS Google Map **requires** an
-`API key from Google <https://developers.google.com/maps/documentation/embed/guide>`_,
+`API key from Google <https://developers.google.com/maps/documentation/javascript/get-api-key>`_,
 that needs to be supplied in your Django settings: ::
 
     DJANGOCMS_GOOGLEMAP_API_KEY = ''
@@ -66,7 +66,8 @@ that needs to be supplied in your Django settings: ::
 Note that the provided templates are minimal by design. You are encouraged
 to adapt and override them to your project's requirements. The included
 demo JavaScript does not require jQuery or any other 3rd party library
-other than Google Maps own JavaScript, which will be loaded automatically.
+other than Google Maps own `Maps JavaScript API <https://developers.google.com/maps/documentation/javascript>`_,
+which will be loaded automatically.
 
 This addon provides a ``default`` template for all instances. You can provide
 additional template choices by adding a ``DJANGOCMS_GOOGLEMAP_TEMPLATES``
@@ -81,6 +82,9 @@ otherwise you will get a *template does not exist* error. You can do this by
 copying the ``default`` folder inside that directory and renaming it to
 ``feature``.
 
+For more details on customizing maps see Google `Maps JavaScript API <https://developers.google.com/maps/documentation/javascript/overview>`_
+documentation, as well as default templates in ``templates/djangocms_googlemap/default`` of
+**django CMS Google Map** plugin for options supported by this plugin.
 
 Running Tests
 -------------

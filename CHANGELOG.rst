@@ -3,6 +3,15 @@ Changelog
 =========
 
 
+2.x.x (unreleased)
+==================
+
+* Added support for Cloud-based maps styling via ``Map ID``
+* Fixed Console warning ``Google Maps JavaScript API has been loaded directly without a callback.``
+* Added map loading in language equal to current page's language
+* Updated README with up-to date links to ``Google Maps JavaScript API`` documentation
+
+
 2.0.0 (2020-09-02)
 ==================
 
