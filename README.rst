@@ -66,8 +66,7 @@ that needs to be supplied in your Django settings: ::
 Note that the provided templates are minimal by design. You are encouraged
 to adapt and override them to your project's requirements. The included
 demo JavaScript does not require jQuery or any other 3rd party library
-other than Google Maps own `Maps JavaScript API <https://developers.google.com/maps/documentation/javascript>`_,
-which will be loaded automatically.
+other than Google Maps own Maps JavaScript API, which will be loaded automatically.
 
 This addon provides a ``default`` template for all instances. You can provide
 additional template choices by adding a ``DJANGOCMS_GOOGLEMAP_TEMPLATES``
