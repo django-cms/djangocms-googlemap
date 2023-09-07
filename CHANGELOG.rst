@@ -7,7 +7,7 @@ Changelog
 
 * Remove tight django-treebeard restriction added when 4.5.0 contained breaking changes. The core CMS and django-treebeard have since been patched to resolve the issue.
 * Add metadata about supported Python/Django/DjangoCMS version
-* Remove Python 3.7 from testing as it is end-of-life
+* Add Python 3.10 and 3.11 to testing
 
 
 2.1.0 (2022-05-24)
