@@ -2,8 +2,14 @@
 Changelog
 =========
 
+2.2.0 (2023-12-06)
+==================
+
+* Add Django 4.2 support to testing
+* Add migrations needed for Django 4.2
+
 2.1.1 (2023-09-07)
-==========
+==================
 
 * Remove tight django-treebeard restriction added when 4.5.0 contained breaking changes. The core CMS and django-treebeard have since been patched to resolve the issue.
 * Add metadata about supported Python/Django/DjangoCMS version
