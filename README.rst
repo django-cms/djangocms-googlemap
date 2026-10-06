@@ -81,6 +81,17 @@ otherwise you will get a *template does not exist* error. You can do this by
 copying the ``default`` folder inside that directory and renaming it to
 ``feature``.
 
+Map position and zoom level
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If the map has a default latitude and longitude set (under *Advanced settings*),
+it is always centered on that location using the configured zoom level, even
+if it contains markers.
+
+If no default location is set, the map automatically adjusts its viewport to
+show all markers. In this case, the configured zoom level acts as the maximum
+zoom level, e.g., when there is only a single marker.
+
 For more details on customizing maps see Google `Maps JavaScript API <https://developers.google.com/maps/documentation/javascript/overview>`_
 documentation, as well as default templates in ``templates/djangocms_googlemap/default`` of
 **django CMS Google Map** plugin for options supported by this plugin.
