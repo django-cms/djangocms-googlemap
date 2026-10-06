@@ -2,7 +2,9 @@ from cms.api import add_plugin, create_page
 from cms.test_utils.testcases import CMSTestCase
 
 from djangocms_googlemap.cms_plugins import (
-    GoogleMapMarkerPlugin, GoogleMapPlugin, GoogleMapRoutePlugin,
+    GoogleMapMarkerPlugin,
+    GoogleMapPlugin,
+    GoogleMapRoutePlugin,
 )
 
 from .helpers import get_filer_image

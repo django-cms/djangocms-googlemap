@@ -1,0 +1,34 @@
+[tool.ruff]
+line-length = 119
+extend-exclude = [
+  "**/migrations/**",
+  ".env",
+  "data",
+  "tmp",
+  "docs",
+]
+
+[tool.ruff.lint]
+select = [
+  "E",
+  "W",
+  "F",
+  "I",
+]
+
+[tool.ruff.lint.isort]
+known-first-party = ["djangocms_googlemap"]
+lines-after-imports = 2
+section-order = [
+  "future",
+  "standard-library",
+  "django",
+  "cms",
+  "third-party",
+  "first-party",
+  "local-folder",
+]
+
+[tool.ruff.lint.isort.sections]
+django = ["django"]
+cms = ["cms", "menus"]

@@ -3,8 +3,13 @@ from django.core.exceptions import ValidationError
 from django.test import TestCase
 
 from djangocms_googlemap.models import (
-    MAP_TYPE_CHOICES, TRAVEL_MODE_CHOICES, ZOOM_LEVEL_CHOICES, GoogleMap,
-    GoogleMapMarker, GoogleMapRoute, get_templates,
+    MAP_TYPE_CHOICES,
+    TRAVEL_MODE_CHOICES,
+    ZOOM_LEVEL_CHOICES,
+    GoogleMap,
+    GoogleMapMarker,
+    GoogleMapRoute,
+    get_templates,
 )
 
 from .helpers import get_filer_image
