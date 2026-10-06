@@ -41,6 +41,12 @@
             this.container = container;
             this.markers = [];
             this.bounds = new google.maps.LatLngBounds();
+            var lat = parseFloat(getAttr(container, 'lat'));
+            var lng = parseFloat(getAttr(container, 'lng'));
+
+            // if a default location is given, the map keeps the configured
+            // center and zoom level, otherwise it fits all markers (ref #106)
+            this.fitToMarkers = isNaN(lat) || isNaN(lng);
             this.settings = {
                 zoom: parseInt(getAttr(container, 'zoom')),
                 styles: JSON.parse(getAttr(container, 'style') || false),
@@ -57,8 +63,8 @@
                 scrollwheel: getAttr(container, 'scrollwheel'),
                 mapTypeId: google.maps.MapTypeId[getAttr(container, 'map-type-control')],
                 center: {
-                    lat: parseFloat(getAttr(container, 'lat')) || 0,
-                    lng: parseFloat(getAttr(container, 'lng')) || 0
+                    lat: lat || 0,
+                    lng: lng || 0
                 }
             };
             var mapContainer = container.getElementsByClassName('js-djangocms-googlemap-container');
@@ -161,11 +167,15 @@
             },
 
             /**
-             * Update map position and bounds.
+             * Update map position and bounds to fit all markers. Skipped if
+             * the map has a default location, which then takes precedence.
              *
              * @method update
              */
             update: function update() {
+                if (!this.fitToMarkers) {
+                    return;
+                }
                 google.maps.event.addListenerOnce(this.map, 'bounds_changed',
                     function () {
                         if (this.map.getZoom() > this.settings.zoom) {

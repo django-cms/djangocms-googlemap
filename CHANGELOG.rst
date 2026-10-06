@@ -2,6 +2,12 @@
 Changelog
 =========
 
+Unreleased
+==========
+
+* Fix: Respect the map's default location and zoom level if markers are present.
+  Maps without a default location still fit their viewport to all markers.
+
 2.2.0 (2023-12-06)
 ==================
 
