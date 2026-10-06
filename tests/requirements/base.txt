@@ -2,3 +2,4 @@ django-app-helper
 tox
 coverage
 django-mptt>=0.9.1
+djangocms-admin-style
