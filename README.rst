@@ -93,7 +93,7 @@ You can run tests by executing::
     virtualenv env
     source env/bin/activate
     pip install -r tests/requirements.txt
-    python setup.py test
+    python tests/settings.py
 
 
 .. |pypi| image:: https://badge.fury.io/py/djangocms-googlemap.svg
