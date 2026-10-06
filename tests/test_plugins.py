@@ -2,7 +2,9 @@ from cms.api import add_plugin, create_page
 from cms.test_utils.testcases import CMSTestCase
 
 from djangocms_googlemap.cms_plugins import (
-    GoogleMapMarkerPlugin, GoogleMapPlugin, GoogleMapRoutePlugin,
+    GoogleMapMarkerPlugin,
+    GoogleMapPlugin,
+    GoogleMapRoutePlugin,
 )
 
 from .helpers import get_filer_image
@@ -17,14 +19,12 @@ class GoogleMapPluginsTestCase(CMSTestCase):
             template="page.html",
             language=self.language,
         )
-        self.home.publish(self.language)
         self.page = create_page(
             title="content",
             template="page.html",
             language=self.language,
         )
-        self.page.publish(self.language)
-        self.placeholder = self.page.placeholders.get(slot="content")
+        self.placeholder = self.page.get_placeholders(self.language).get(slot="content")
         self.superuser = self.get_superuser()
         self.icon = get_filer_image("pin.png")
 
@@ -71,7 +71,6 @@ class GoogleMapPluginsTestCase(CMSTestCase):
             plugin_type=GoogleMapPlugin.__name__,
             language=self.language,
         )
-        self.page.publish(self.language)
         self.assertEqual(parent.get_plugin_class_instance().name, "Google Map")
 
         with self.login_user_context(self.superuser):
@@ -87,7 +86,6 @@ class GoogleMapPluginsTestCase(CMSTestCase):
             plugin_type=GoogleMapMarkerPlugin.__name__,
             language=self.language,
         )
-        self.page.publish(self.language)
         self.assertEqual(child.get_plugin_class_instance().name, "Marker")
 
         with self.login_user_context(self.superuser):
@@ -101,7 +99,6 @@ class GoogleMapPluginsTestCase(CMSTestCase):
             plugin_type=GoogleMapRoutePlugin.__name__,
             language=self.language,
         )
-        self.page.publish(self.language)
         self.assertEqual(child.get_plugin_class_instance().name, "Route")
 
         with self.login_user_context(self.superuser):
