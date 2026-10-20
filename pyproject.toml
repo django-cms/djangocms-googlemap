@@ -1,3 +1,62 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "djangocms-googlemap"
+dynamic = ["version"]
+description = "Adds Google Maps plugins to django CMS."
+readme = "README.rst"
+license = "BSD-3-Clause"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+authors = [
+  { name = "Divio AG", email = "info@divio.com" },
+]
+maintainers = [
+  { name = "Django CMS Association and contributors", email = "info@django-cms.org" },
+]
+dependencies = [
+  "django-cms>=3.7",
+  "django-filer>=1.7",
+  "django-treebeard>=4.3",
+]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Environment :: Web Environment",
+  "Intended Audience :: Developers",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
+  "Programming Language :: Python :: 3.15",
+  "Framework :: Django",
+  "Framework :: Django :: 5.2",
+  "Framework :: Django :: 6.0",
+  "Framework :: Django :: 6.1",
+  "Framework :: Django CMS",
+  "Framework :: Django CMS :: 5.0",
+  "Framework :: Django CMS :: 5.1",
+  "Topic :: Internet :: WWW/HTTP",
+  "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+  "Topic :: Software Development",
+  "Topic :: Software Development :: Libraries",
+]
+
+[project.urls]
+Homepage = "https://github.com/django-cms/djangocms-googlemap"
+Changelog = "https://github.com/django-cms/djangocms-googlemap/blob/master/CHANGELOG.rst"
+
+[tool.setuptools.dynamic]
+version = { attr = "djangocms_googlemap.__version__" }
+
+[tool.setuptools.packages.find]
+include = ["djangocms_googlemap*"]
+
 [tool.ruff]
 line-length = 119
 extend-exclude = [
