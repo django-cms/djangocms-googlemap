@@ -33,7 +33,7 @@ One of the easiest contributions you can make is helping to translate this addon
 Documentation
 =============
 
-See ``REQUIREMENTS`` in the `setup.py <https://github.com/divio/djangocms-googlemap/blob/master/setup.py>`_
+See ``dependencies`` in the `pyproject.toml <https://github.com/django-cms/djangocms-googlemap/blob/master/pyproject.toml>`_
 file for additional dependencies:
 
 |python| |django| |djangocms|
@@ -103,7 +103,7 @@ You can run tests by executing::
 
     virtualenv env
     source env/bin/activate
-    pip install -r tests/requirements.txt
+    pip install -r tests/requirements/dj52_cms51.txt .
     python tests/settings.py
 
 
